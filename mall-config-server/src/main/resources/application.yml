@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/microcent/mall/mall-config-repo
+          #username: microcent
+          #password: baby5845211314
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:1001/eureka/

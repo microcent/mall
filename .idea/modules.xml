@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/mall.iml" filepath="$PROJECT_DIR$/mall.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-api-gateway/mall-api-gateway.iml" filepath="$PROJECT_DIR$/mall-api-gateway/mall-api-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-config-server/mall-config-server.iml" filepath="$PROJECT_DIR$/mall-config-server/mall-config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-monitor-server/mall-monitor-server.iml" filepath="$PROJECT_DIR$/mall-monitor-server/mall-monitor-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-registry-server/mall-registry-server.iml" filepath="$PROJECT_DIR$/mall-registry-server/mall-registry-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-zipkin-server/mall-zipkin-server.iml" filepath="$PROJECT_DIR$/mall-zipkin-server/mall-zipkin-server.iml" />
+    </modules>
+  </component>
+</project>
