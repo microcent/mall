@@ -1,14 +1,14 @@
+server:
+  port: 6666
+
 spring:
   application:
-    name: config-server
+    name: @pom.artifactId@
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/microcent/mall/mall-config-repo
-          #username: microcent
-          #password: baby5845211314
-eureka:
-  client:
-    service-url:
-      default-zone: http://localhost:1001/eureka/
+          uri: https://github.com/microcent/mall                       # 配置git仓库的地址
+          searchPaths: mall-config-repo                               # git仓库地址下的相对地址，可以配置多个，用,分割。
+          username:                                                   # git仓库的账号
+          password:                                                   # git仓库的密码

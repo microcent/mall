@@ -1,0 +1,13 @@
+eureka:
+  environment: dev
+  server:
+    enable-self-preservation: false
+    wait-time-in-ms-when-sync-empty: 0
+  instance:
+    hostname: localhost # 指定该Eureka实例的主机名
+    prefer-ip-address: false
+  client:
+    registerWithEureka: false # 是否向服务注册中心注册自己
+    fetchRegistry: false # 是否检索服务
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/

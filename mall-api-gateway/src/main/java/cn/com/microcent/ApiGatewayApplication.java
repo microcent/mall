@@ -15,9 +15,9 @@ public class ApiGatewayApplication {
     }
 
     // 配置过滤器
-    @Bean
-    public AccessTokenFilter accessTokenFilter() {
-        return new AccessTokenFilter();
-    }
+//    @Bean
+//    public AccessTokenFilter accessTokenFilter() {
+//        return new AccessTokenFilter();
+//    }
 
 }
