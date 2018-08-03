@@ -22,6 +22,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="mall-account-service" />
         <module name="mall-api-gateway" />
         <module name="mall-config-server" />
         <module name="mall-monitor-server" />
@@ -31,6 +32,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="mall" target="1.8" />
+      <module name="mall-account-service" target="1.8" />
       <module name="mall-api-gateway" target="1.8" />
       <module name="mall-config-server" target="1.8" />
       <module name="mall-monitor-server" target="1.8" />
