@@ -1,14 +1,13 @@
 server:
-  port: 6666
+  port: 7777
 
 spring:
   application:
     name: @pom.artifactId@
   cloud:
     config:
+      label: master
       server:
         git:
-          uri: https://github.com/microcent/mall                       # 配置git仓库的地址
-          searchPaths: mall-config-repo                               # git仓库地址下的相对地址，可以配置多个，用,分割。
-          username:                                                   # git仓库的账号
-          password:                                                   # git仓库的密码
+          uri: https://github.com/microcent/mall/
+          searchPaths: mall-config-repo
