@@ -10,9 +10,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>cn.com.microcent</groupId>
-    <artifactId>mall-api-geteway</artifactId>
+    <artifactId>mall-api-gateway</artifactId>
 
-    <name>mall-api-geteway</name>
+    <name>mall-api-gateway</name>
     <description>服务网关</description>
 
     <dependencies>
