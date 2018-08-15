@@ -4,51 +4,31 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Cart',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
-  },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
-  onLoad: function () {
-    if (app.globalData.userInfo) {
-      this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
-      })
-    } else if (this.data.canIUse){
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
-      }
-    } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
-          this.setData({
-            userInfo: res.userInfo,
-            hasUserInfo: true
-          })
-        }
-      })
+    hasLogin: false,
+    cartGoods: [],
+    cartTotal: {
+      "goodsCount": 0,
+      "goodsAmount": 0.00,
+      "checkedGoodsCount": 0,
+      "checkedGoodsAmount": 0.00
     }
   },
-  getUserInfo: function(e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
+  onLoad: function() {
     this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
+      hasLogin: true,
+      cartGoods: [{
+        goodsName: 'goodsName1',
+        number: 1,
+        price: 100,
+        picUrl: '',
+        checked: true
+      }, {
+        goodsName: 'goodsName2',
+        number: 1,
+        price: 200,
+        picUrl: '',
+        checked: true
+      }]
+    });
   }
 })

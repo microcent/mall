@@ -4,51 +4,57 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Catalog',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    categoryList: [],
+    currentCategory: {},
+    currentSubCategoryList: {},
+    goodsCount: 0
   },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
+  onLoad: function() {
+    this.getList();
   },
-  onLoad: function () {
-    if (app.globalData.userInfo) {
-      this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
-      })
-    } else if (this.data.canIUse){
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
-      }
-    } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
-          this.setData({
-            userInfo: res.userInfo,
-            hasUserInfo: true
-          })
-        }
-      })
-    }
-  },
-  getUserInfo: function(e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
+  getList: function() {
     this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
+      categoryList: [{
+        id: 1,
+        name: '电子'
+      }, {
+        id: 2,
+        name: '计算机'
+      }, {
+        id: 3,
+        name: '电子'
+      }, {
+        id: 4,
+        name: '计算机'
+      }],
+      currentCategory: {
+        id: 1,
+        name: '电子'
+      },
+      currentSubCategoryList: {
+        id: 1,
+        name: '电子',
+        picUrl: ''
+      }
+    });
+  },
+  switchCate: function(event) {
+    var that = this;
+    var currentTarget = event.currentTarget;
+    if (this.data.currentCategory.id == event.currentTarget.dataset.id) {
+      return false;
+    }
+
+    this.setData({
+      currentCategory: {
+        id: event.currentTarget.dataset.id,
+        name: '计算机'
+      },
+      currentSubCategoryList: {
+        id: 1,
+        name: '电子',
+        picUrl: ''
+      }
+    });
   }
 })
