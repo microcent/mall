@@ -16,7 +16,7 @@ Page({
   onLoad: function() {
     this.setData({
       banner: [{
-        url: 'http://yanxuan.nosdn.127.net/8976116db321744084774643a933c5ce.png'
+        url: ''
       }, {
         url: 'http://yanxuan.nosdn.127.net/8976116db321744084774643a933c5ce.png'
       }],
