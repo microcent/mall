@@ -56,6 +56,11 @@ Page({
       url: '/pages/my/order/index'
     });
   },
+  goFootprint: function() {
+    wx.navigateTo({
+      url: '/pages/my/footprint/index'
+    });
+  },
   goAddress: function() {
     wx.navigateTo({
       url: '/pages/my/address/index'

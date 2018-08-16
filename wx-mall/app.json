@@ -5,12 +5,13 @@
     "pages/cart/index",
     "pages/my/index",
     "pages/my/order/index",
+    "pages/my/footprint/index",
     "pages/my/address/index",
+    "pages/my/address/add/index",
     "pages/my/collect/index",
     "pages/search/index",
     "pages/category/index",
     "pages/goods/index",
-    "pages/logs/logs",
     "pages/about/index"
   ],
   "window": {

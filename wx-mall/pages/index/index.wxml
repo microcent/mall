@@ -8,7 +8,7 @@
     </swiper-item>
   </swiper>
   <view class="m-menu">
-    <navigator class="item" url="/pages/category/category?id={{item.id}}" wx:for="{{channel}}" wx:key="id">
+    <navigator class="item" url="/pages/category/index?id={{item.id}}" wx:for="{{channel}}" wx:key="id">
       <image src="{{item.iconUrl}}" background-size="cover"></image>
       <text>{{item.name}}</text>
     </navigator>
@@ -26,7 +26,7 @@
     </view>
     <view class="b">
       <view class="item" wx:for="{{groupons}}" wx:for-index="index" wx:for-item="item" wx:key="id">
-        <navigator url="/pages/goods/goods?id={{item.goods.id}}">
+        <navigator url="/pages/goods/index?id={{item.goods.id}}">
           <image class="img" src="{{item.goods.picUrl}}" background-size="cover"></image>
           <view class="right">
             <view class="text">
@@ -79,7 +79,7 @@
     </view>
     <view class="b">
       <view class="item" wx:for="{{newGoods}}" wx:for-index="index" wx:for-item="item" wx:key="id">
-        <navigator url="../goods/goods?id={{item.id}}">
+        <navigator url="../goods/index?id={{item.id}}">
           <image class="img" src="{{item.picUrl}}" background-size="cover"></image>
           <text class="name">{{item.name}}</text>
           <text class="price">￥{{item.retailPrice}}</text>
@@ -98,7 +98,7 @@
     </view>
     <view class="b">
       <view class="item" wx:for="{{hotGoods}}" wx:for-index="index" wx:for-item="item" wx:key="id">
-        <navigator url="/pages/goods/goods?id={{item.id}}">
+        <navigator url="/pages/goods/index?id={{item.id}}">
           <image class="img" src="{{item.picUrl}}" background-size="cover"></image>
           <view class="right">
             <view class="text">
@@ -144,7 +144,7 @@
     <view class="b">
       <block wx:for="{{item.goodsList}}" wx:for-index="iindex" wx:for-item="iitem" wx:key="id">
         <view class="item {{iindex % 2 == 0 ? '' : 'item-b'}}">
-          <navigator url="../goods/goods?id={{iitem.id}}" class="a">
+          <navigator url="../goods/index?id={{iitem.id}}" class="a">
             <image class="img" src="{{iitem.picUrl}}" background-size="cover"></image>
             <text class="name">{{iitem.name}}</text>
             <text class="price">￥{{iitem.retailPrice}}</text>
@@ -152,7 +152,7 @@
         </view>
       </block>
       <view class="item item-b item-more">
-        <navigator url="/pages/category/category?id={{item.id}}" class="more-a">
+        <navigator url="/pages/category/index?id={{item.id}}" class="more-a">
           <view class="txt">{{'更多'+item.name+'好物'}}</view>
           <image class="icon" src="../../static/images/icon_go_more.png" background-size="cover"></image>
         </navigator>
