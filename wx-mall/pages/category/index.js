@@ -7,10 +7,31 @@ Page({
     navList: [],
     goodsList: [],
     id: 0,
-    currentCategory: {}
+    currentCategory: {},
+    scrollLeft: 0,
+    scrollTop: 0,
+    scrollHeight: 0
   },
-  onLoad: function() {
-    this.setData({
+  onLoad: function(options) {
+    var that = this;
+    if (options.id) {
+      that.setData({
+        id: parseInt(options.id)
+      });
+    }
+
+    wx.getSystemInfo({
+      success: function(res) {
+        that.setData({
+          scrollHeight: res.windowHeight
+        });
+      }
+    });
+    that.getCategory();
+  },
+  getCategory: function() {
+    var that = this;
+    that.setData({
       navList: [{
         id: 1,
         name: '布艺软装'
@@ -27,6 +48,30 @@ Page({
         id: 5,
         name: '地垫'
       }],
+      currentCategory: {
+        id: 1,
+        name: '居家'
+      }
+    });
+    //nav位置
+    let currentIndex = 0;
+    let navListCount = that.data.navList.length;
+    for (let i = 0; i < navListCount; i++) {
+      currentIndex += 1;
+      if (that.data.navList[i].id == that.data.id) {
+        break;
+      }
+    }
+    if (currentIndex > navListCount / 2 && navListCount > 5) {
+      that.setData({
+        scrollLeft: currentIndex * 60
+      });
+    }
+    that.getGoods();
+  },
+  getGoods: function() {
+    var that = this;
+    that.setData({
       goodsList: [{
         id: 1,
         name: '全棉进口埃及长绒棉浴巾',
@@ -42,11 +87,29 @@ Page({
         name: '色织水洗棉纯色四件套',
         picUrl: 'http://yanxuan.nosdn.127.net/25d734cc0b2eae8f63f9deb1e4ad5f64.png',
         retailPrice: 299
-      }],
-      currentCategory: {
-        id: 1,
-        name: '居家'
-      }
+      }]
     });
+  },
+  switchCate: function(event) {
+    if (this.data.id == event.currentTarget.dataset.id) {
+      return false;
+    }
+    var that = this;
+    var clientX = event.detail.x;
+    var currentTarget = event.currentTarget;
+    if (clientX < 60) {
+      that.setData({
+        scrollLeft: currentTarget.offsetLeft - 60
+      });
+    } else if (clientX > 330) {
+      that.setData({
+        scrollLeft: currentTarget.offsetLeft
+      });
+    }
+    that.setData({
+      id: event.currentTarget.dataset.id
+    });
+
+    that.getCategory();
   }
 })

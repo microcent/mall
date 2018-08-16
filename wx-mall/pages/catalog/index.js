@@ -7,12 +7,22 @@ Page({
     categoryList: [],
     currentCategory: {},
     currentSubCategoryList: {},
-    goodsCount: 0
+    goodsCount: 0,
   },
   onLoad: function() {
-    this.getList();
+    var that = this;
+    that.getCategoryList();
   },
-  getList: function() {
+  onPullDownRefresh() {
+    wx.showNavigationBarLoading() //在标题栏中显示加载
+    this.getCategoryList();
+    wx.hideNavigationBarLoading() //完成停止加载
+    wx.stopPullDownRefresh() //停止下拉刷新
+  },
+  getCategoryList: function() {
+    wx.showLoading({
+      title: '加载中...',
+    });
     this.setData({
       categoryList: [{
         id: 1,
@@ -53,6 +63,28 @@ Page({
         id: 5,
         name: '地垫',
         picUrl: 'http://yanxuan.nosdn.127.net/1611ef6458e244d1909218becfe87c4d.png'
+      }],
+      goodsCount: 100
+    });
+
+    wx.hideLoading();
+  },
+  getCategory: function(id) {
+    this.setData({
+      currentCategory: {
+        id: id,
+        name: '居家',
+        frontName: '回家，放松身心',
+        picUrl: 'http://yanxuan.nosdn.127.net/e8bf0cf08cf7eda21606ab191762e35c.png'
+      },
+      currentSubCategoryList: [{
+        id: 1,
+        name: '布艺软装',
+        picUrl: 'http://yanxuan.nosdn.127.net/2e2fb4f2856a021bbcd1b4c8400f2b06.png'
+      }, {
+        id: 2,
+        name: '被枕',
+        picUrl: 'http://yanxuan.nosdn.127.net/2e2fb4f2856a021bbcd1b4c8400f2b06.png'
       }]
     });
   },
@@ -63,18 +95,6 @@ Page({
       return false;
     }
 
-    this.setData({
-      currentCategory: {
-        id: event.currentTarget.dataset.id,
-        name: '餐厨',
-        frontName: '爱，囿于厨房',
-        picUrl: 'http://yanxuan.nosdn.127.net/3708dbcb35ad5abf9e001500f73db615.png'
-      },
-      currentSubCategoryList: [{
-        id: 1,
-        name: '锅具',
-        picUrl: 'http://yanxuan.nosdn.127.net/d2db0d1d0622c621a8aa5a7c06b0fc6d.png'
-      }]
-    });
+    that.getCategory(event.currentTarget.dataset.id);
   }
 })

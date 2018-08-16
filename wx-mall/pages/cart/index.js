@@ -11,7 +11,10 @@ Page({
       "goodsAmount": 0.00,
       "checkedGoodsCount": 0,
       "checkedGoodsAmount": 0.00
-    }
+    },
+    isEditCart: false,
+    checkedAllStatus: true,
+    editCartList: []
   },
   onLoad: function() {
     this.setData({
@@ -30,5 +33,79 @@ Page({
         checked: false
       }]
     });
+  },
+  isCheckedAll: function() {
+    //判断购物车商品已全选
+    return this.data.cartGoods.every(function(element, index, array) {
+      if (element.checked == true) {
+        return true;
+      } else {
+        return false;
+      }
+    });
+  },
+  doCheckedAll: function() {
+    let checkedAll = this.isCheckedAll()
+    this.setData({
+      checkedAllStatus: this.isCheckedAll()
+    });
+  },
+  checkedItem: function(event) {
+    let itemIndex = event.target.dataset.itemIndex;
+  },
+  getCheckedGoodsCount: function() {
+    let checkedGoodsCount = 0;
+    this.data.cartGoods.forEach(function(v) {
+      if (v.checked === true) {
+        checkedGoodsCount += v.number;
+      }
+    });
+    return checkedGoodsCount;
+  },
+  checkedAll: function() {
+    let that = this;
+
+    if (!this.data.isEditCart) {
+      var productIds = this.data.cartGoods.map(function(v) {
+        return v.productId;
+      });
+      that.setData({
+        checkedAllStatus: that.isCheckedAll()
+      });
+    } else {
+      //编辑状态
+      let checkedAllStatus = that.isCheckedAll();
+      let tmpCartData = this.data.cartGoods.map(function(v) {
+        v.checked = !checkedAllStatus;
+        return v;
+      });
+
+      that.setData({
+        cartGoods: tmpCartData,
+        checkedAllStatus: that.isCheckedAll(),
+        'cartTotal.checkedGoodsCount': that.getCheckedGoodsCount()
+      });
+    }
+  },
+  editCart: function() {
+    var that = this;
+    if (this.data.isEditCart) {
+      this.setData({
+        isEditCart: !this.data.isEditCart
+      });
+    } else {
+      //编辑状态
+      let tmpCartList = this.data.cartGoods.map(function(v) {
+        v.checked = false;
+        return v;
+      });
+      this.setData({
+        editCartList: this.data.cartGoods,
+        cartGoods: tmpCartList,
+        isEditCart: !this.data.isEditCart,
+        checkedAllStatus: that.isCheckedAll(),
+        'cartTotal.checkedGoodsCount': that.getCheckedGoodsCount()
+      });
+    }
   }
 })

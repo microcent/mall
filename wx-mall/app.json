@@ -12,7 +12,11 @@
     "pages/search/index",
     "pages/category/index",
     "pages/goods/index",
-    "pages/about/index"
+    "pages/about/index",
+    "pages/auth/login/index",
+    "pages/auth/login/account/index",
+    "pages/auth/register/index",
+    "pages/auth/reset/index"
   ],
   "window": {
     "navigationBarBackgroundColor": "#FFFFFF",

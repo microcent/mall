@@ -4,52 +4,38 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'My',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
-  },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
-  onLoad: function() {
-    if (app.globalData.userInfo) {
-      this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
-      })
-    } else if (this.data.canIUse) {
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
-      }
-    } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
-          this.setData({
-            userInfo: res.userInfo,
-            hasUserInfo: true
-          })
-        }
-      })
+    userInfo: {
+      nickName: '点击登录',
+      avatarUrl: 'http://yanxuan.nosdn.127.net/8945ae63d940cc42406c3f67019c5cb6.png'
     }
   },
-  getUserInfo: function(e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
+  onLoad: function() {
+
+  },
+  onShow: function() {
+    var that = this;
+    //获取用户的登录信息
+    if (app.globalData.hasLogin) {
+      wx.getUserInfo({
+        success: res => {
+          // 可以将 res 发送给后台解码出 unionId
+          that.setData({
+            userInfo: res.userInfo
+          });
+        }
+      })
+      // let userInfo = wx.getStorageSync('userInfo');
+      // this.setData({
+      //   userInfo: userInfo,
+      // });
+    }
+  },
+  goLogin() {
+    if (!app.globalData.hasLogin) {
+      wx.navigateTo({
+        url: "/pages/auth/login/index"
+      });
+    }
   },
   goOrder: function() {
     wx.navigateTo({

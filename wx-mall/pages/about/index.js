@@ -6,11 +6,11 @@ Page({
   data: {
     shopInfo: {
       name: 'mall',
-      address: 'https://github.com/linlinjava/litemall',
+      address: 'https://github.com/microcent/mall',
       latitude: 31.201900,
       longitude: 121.587839,
       linkPhone: '18617333732',
-      qqNumber: '738696120'
+      qqNumber: '64432145'
     }
   },
   onLoad: function() {
