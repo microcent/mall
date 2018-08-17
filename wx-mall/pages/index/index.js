@@ -21,18 +21,23 @@ Page({
         url: 'http://yanxuan.nosdn.127.net/8976116db321744084774643a933c5ce.png'
       }],
       channel: [{
+        id: 1,
         name: '居家',
         iconUrl: 'http://yanxuan.nosdn.127.net/a45c2c262a476fea0b9fc684fed91ef5.png'
       }, {
+        id: 2,
         name: '餐厨',
         iconUrl: 'http://yanxuan.nosdn.127.net/ad8b00d084cb7d0958998edb5fee9c0a.png'
       }, {
+        id: 3,
         name: '饮食',
         iconUrl: 'http://yanxuan.nosdn.127.net/c9280327a3fd2374c000f6bf52dff6eb.png'
       }, {
+        id: 4,
         name: '配件',
         iconUrl: 'http://yanxuan.nosdn.127.net/11abb11c4cfdee59abfb6d16caca4c6a.png'
       }, {
+        id: 5,
         name: '服装',
         iconUrl: 'http://yanxuan.nosdn.127.net/28a685c96f91584e7e4876f1397767db.png'
       }],

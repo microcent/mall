@@ -20,6 +20,8 @@ Page({
       });
     }
 
+    console.log('id:'+that.data.id);
+
     wx.getSystemInfo({
       success: function(res) {
         that.setData({
