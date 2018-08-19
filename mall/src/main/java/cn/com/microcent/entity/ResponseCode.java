@@ -12,7 +12,9 @@ import lombok.Getter;
 public enum ResponseCode {
 
     ERROR(-1, "错误"),
-    SUCCESS(200, "成功");
+    SUCCESS(200, "成功"),
+
+    USER_NOT_FOUND(404001, "用户不存在");
 
     @JsonValue
     private int value;
