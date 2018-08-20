@@ -41,65 +41,65 @@ public class CoreDataSourceConfig {
     public static final String SIGN = "core"; // 唯一标识
 
     public static final String DATASOURCE = SIGN + "Datasource";
-    public static final String DATASOURCE_PREFIX = SIGN + ".datasource";
+    public static final String DATASOURCE_PREFIX = SIGN + ".datasource.";
     public static final String PERSISTENCE_UNIT = SIGN + "PersistenceUnit";
     public static final String ENTITY_MANAGER = SIGN + "EntityManager";
     public static final String ENTITY_MANAGER_FACTORY = SIGN + "EntityManagerFactory";
     public static final String PLATFORM_TX_MANAGER = SIGN + "PlatformTransactionManager";
     public static final String PACKAGE = "cn.com.microcent.repository." + SIGN;
 
-    @Value("${" + SIGN + ".datasource.driver-class-name}")
+    @Value("${" + DATASOURCE_PREFIX + "driver-class-name}")
     private String driverClassName;
 
-    @Value("${" + SIGN + ".datasource.url}")
+    @Value("${" + DATASOURCE_PREFIX + "url}")
     private String url;
 
-    @Value("${" + SIGN + ".datasource.username}")
+    @Value("${" + DATASOURCE_PREFIX + "username}")
     private String username;
 
-    @Value("${" + SIGN + ".datasource.password}")
+    @Value("${" + DATASOURCE_PREFIX + "password}")
     private String password;
 
-    @Value("${" + SIGN + ".datasource.type}")
+    @Value("${" + DATASOURCE_PREFIX + "type}")
     private String type;
 
-    @Value("${" + SIGN + ".datasource.initialSize}")
+    @Value("${" + DATASOURCE_PREFIX + "initialSize}")
     private int initialSize;
 
-    @Value("${" + SIGN + ".datasource.minIdle}")
+    @Value("${" + DATASOURCE_PREFIX + "minIdle}")
     private int minIdle;
 
-    @Value("${" + SIGN + ".datasource.maxActive}")
+    @Value("${" + DATASOURCE_PREFIX + "maxActive}")
     private int maxActive;
 
-    @Value("${" + SIGN + ".datasource.maxWait}")
+    @Value("${" + DATASOURCE_PREFIX + "maxWait}")
     private int maxWait;
 
-    @Value("${" + SIGN + ".datasource.maxPoolPreparedStatementPerConnectionSize}")
+    @Value("${" + DATASOURCE_PREFIX + "maxPoolPreparedStatementPerConnectionSize}")
     private int maxPoolPreparedStatementPerConnectionSize;
 
-    @Value("${" + SIGN + ".datasource.timeBetweenEvictionRunsMillis}")
+    @Value("${" + DATASOURCE_PREFIX + "timeBetweenEvictionRunsMillis}")
     private int timeBetweenEvictionRunsMillis;
 
-    @Value("${" + SIGN + ".datasource.minEvictableIdleTimeMillis}")
+    @Value("${" + DATASOURCE_PREFIX + "minEvictableIdleTimeMillis}")
     private int minEvictableIdleTimeMillis;
 
-    @Value("${" + SIGN + ".datasource.validationQuery}")
+    @Value("${" + DATASOURCE_PREFIX + "validationQuery}")
     private String validationQuery;
 
-    @Value("${" + SIGN + ".datasource.testWhileIdle}")
+    @Value("${" + DATASOURCE_PREFIX + "testWhileIdle}")
     private boolean testWhileIdle;
 
-    @Value("${" + SIGN + ".datasource.testOnBorrow}")
+    @Value("${" + DATASOURCE_PREFIX + "testOnBorrow}")
     private boolean testOnBorrow;
 
-    @Value("${" + SIGN + ".datasource.testOnReturn}")
+    @Value("${" + DATASOURCE_PREFIX + "testOnReturn}")
     private boolean testOnReturn;
 
-    @Value("${" + SIGN + ".datasource.poolPreparedStatements}")
+    @Value("${" + DATASOURCE_PREFIX + "poolPreparedStatements}")
     private boolean poolPreparedStatements;
 
-    @Value("${" + SIGN + ".datasource.filters}")
+    @Value("${" + DATASOURCE_PREFIX + "filters}")
     private String filters;
 
     @Autowired
@@ -146,7 +146,7 @@ public class CoreDataSourceConfig {
     public LocalContainerEntityManagerFactoryBean coreEntityManagerFactory(EntityManagerFactoryBuilder builder) {
         return builder
                 .dataSource(coreDataSource())
-                .packages("cn.com.microcent.model." + SIGN)
+                .packages("cn.com.microcent.domain." + SIGN)
                 .persistenceUnit(PERSISTENCE_UNIT)
                 .properties(jpaProperties.getProperties())
                 .build();

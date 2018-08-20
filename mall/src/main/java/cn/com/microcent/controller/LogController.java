@@ -1,8 +1,9 @@
 package cn.com.microcent.controller;
 
 import cn.com.microcent.entity.Response;
-import cn.com.microcent.model.log.Log;
+import cn.com.microcent.domain.log.Log;
 import cn.com.microcent.repository.log.LogRepository;
+import cn.com.microcent.service.LogService;
 import io.swagger.annotations.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,7 +25,7 @@ public class LogController {
     private static final Logger LOGGER = LoggerFactory.getLogger(LogController.class);
 
     @Autowired
-    private LogRepository repository;
+    private LogService logService;
 
     @ApiOperation(value = "获取日志列表", notes = "")
     @ApiResponses({
@@ -32,7 +33,7 @@ public class LogController {
     })
     @RequestMapping(value = "", method = RequestMethod.GET)
     public Response list() {
-        List<Log> list = this.repository.findAll();
+        List<Log> list = this.logService.findAll();
         LOGGER.info("list size:{}", list.size());
         return Response.success(list);
     }

@@ -1,10 +1,10 @@
 package cn.com.microcent.controller;
 
+import cn.com.microcent.domain.core.User;
 import cn.com.microcent.entity.Response;
 import cn.com.microcent.entity.ResponseCode;
 import cn.com.microcent.entity.ViewUser;
-import cn.com.microcent.model.core.User;
-import cn.com.microcent.repository.core.UserRepository;
+import cn.com.microcent.service.UserService;
 import io.swagger.annotations.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-import java.util.Optional;
 
 /**
  * Created by Administrator on 2018/8/17.
@@ -28,7 +27,7 @@ public class UserController {
     private static final Logger LOGGER = LoggerFactory.getLogger(UserController.class);
 
     @Autowired
-    private UserRepository repository;
+    private UserService userService;
 
     @ApiOperation(value = "获取用户列表", notes = "")
     @ApiResponses({
@@ -36,7 +35,7 @@ public class UserController {
     })
     @RequestMapping(value = "", method = RequestMethod.GET)
     public Response list() {
-        List<User> list = this.repository.findAll();
+        List<User> list = this.userService.findAll();
         LOGGER.info("list size:{}", list.size());
         return Response.success(list);
     }
@@ -47,10 +46,10 @@ public class UserController {
     })
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public Response user(@PathVariable Long id) {
-        Optional<User> user = this.repository.findById(id);
-        if (user.isPresent()) {
+        User user = this.userService.findOne(id);
+        if (user != null) {
             ViewUser viewUser = new ViewUser();
-            viewUser.fromEntity(user.get());
+            viewUser.fromEntity(user);
             return Response.success(viewUser);
         } else {
             return Response.failure(ResponseCode.USER_NOT_FOUND.getDesc());

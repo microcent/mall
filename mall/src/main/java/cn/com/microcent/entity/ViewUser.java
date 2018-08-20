@@ -1,6 +1,6 @@
 package cn.com.microcent.entity;
 
-import cn.com.microcent.model.core.User;
+import cn.com.microcent.domain.core.User;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
