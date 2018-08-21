@@ -10,10 +10,31 @@ Target Server Type    : MYSQL
 Target Server Version : 50628
 File Encoding         : 65001
 
-Date: 2018-08-21 15:46:08
+Date: 2018-08-21 18:12:28
 */
 
 SET FOREIGN_KEY_CHECKS=0;
+
+-- ----------------------------
+-- Table structure for t_ad
+-- ----------------------------
+DROP TABLE IF EXISTS `t_ad`;
+CREATE TABLE `t_ad` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `link` varchar(255) NOT NULL,
+  `url` varchar(255) NOT NULL,
+  `position` int(11) DEFAULT NULL,
+  `create_time` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of t_ad
+-- ----------------------------
+INSERT INTO `t_ad` VALUES ('1', '合作 谁是你的菜', '', 'http://yanxuan.nosdn.127.net/65091eebc48899298171c2eb6696fe27.jpg', '1', '2018-08-21 17:53:55');
+INSERT INTO `t_ad` VALUES ('2', '活动 美食节', '', 'http://yanxuan.nosdn.127.net/bff2e49136fcef1fd829f5036e07f116.jpg', '1', '2018-08-21 17:53:58');
+INSERT INTO `t_ad` VALUES ('3', '活动 母亲节', '', 'http://yanxuan.nosdn.127.net/8e50c65fda145e6dd1bf4fb7ee0fcecc.jpg', '1', '2018-08-21 17:54:01');
 
 -- ----------------------------
 -- Table structure for t_address
@@ -2837,3 +2858,17 @@ CREATE TABLE `t_user` (
 -- Records of t_user
 -- ----------------------------
 INSERT INTO `t_user` VALUES ('1', 'admin', '123456', '', '0', null, '1', '', '', '0', '', '2018-08-21 14:33:39', null, '2018-08-21 14:33:39');
+
+-- ----------------------------
+-- Procedure structure for proc_top5_brand
+-- ----------------------------
+DROP PROCEDURE IF EXISTS `proc_top5_brand`;
+DELIMITER ;;
+CREATE DEFINER=`root`@`%` PROCEDURE `proc_top5_brand`()
+BEGIN
+	
+	SELECT * FROM t_brand ORDER BY create_time DESC LIMIT 0,5;
+
+END
+;;
+DELIMITER ;

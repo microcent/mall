@@ -1,7 +1,11 @@
 package cn.com.microcent.controller;
 
+import cn.com.microcent.domain.core.Ad;
+import cn.com.microcent.domain.core.Brand;
 import cn.com.microcent.domain.core.Cart;
 import cn.com.microcent.entity.Response;
+import cn.com.microcent.service.AdService;
+import cn.com.microcent.service.BrandService;
 import cn.com.microcent.service.CartService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -27,14 +31,24 @@ public class IndexController {
     private static final Logger LOGGER = LoggerFactory.getLogger(IndexController.class);
 
     @Autowired
+    private AdService adService;
+
+    @Autowired
+    private BrandService brandService;
+
+    @Autowired
     private CartService cartService;
 
     @ApiOperation(value = "获取首页", notes = "")
     @RequestMapping(value = "", method = RequestMethod.GET)
     public Response index() {
-        List<Cart> list = this.cartService.findAll();
+        List<Ad> banners = this.adService.findTop5();
+        List<Brand> brands = this.brandService.findAll();
+        List<Cart> carts = this.cartService.findAll();
         Map<String, Object> map = new HashMap<>();
-        map.put("carts", list);
+        map.put("banners", banners);
+        map.put("brands", brands);
+        map.put("carts", carts);
         return Response.success(map);
     }
 

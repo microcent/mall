@@ -1,3 +1,5 @@
+const util = require('../../utils/util.js');
+const api = require('../../config/api.js');
 //index.js
 //获取应用实例
 const app = getApp()
@@ -14,12 +16,15 @@ Page({
     channel: []
   },
   onLoad: function() {
+    var that = this;
+    util.request(api.IndexUrl).then(function(res) {
+      if (res.code === 0) {
+        that.setData({
+          banner: res.data.banners
+        });
+      }
+    });
     this.setData({
-      banner: [{
-        url: ''
-      }, {
-        url: 'http://yanxuan.nosdn.127.net/8976116db321744084774643a933c5ce.png'
-      }],
       channel: [{
         id: 1,
         name: '居家',

@@ -11,13 +11,6 @@ spring:
       indent-output: true
     default-property-inclusion: non_null
     date-format: yyyy-MM-dd HH:mm:ss
-  jpa:
-    hibernate:
-      # 实体类有更新时，数据库表更新
-      ddl-auto: update
-    show-sql: true
-    format_sql: true
-    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
   http:
     # 过滤字符编码
     encoding:
