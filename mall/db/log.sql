@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50628
 File Encoding         : 65001
 
-Date: 2018-08-20 17:35:03
+Date: 2018-08-21 15:46:21
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -28,6 +28,10 @@ CREATE TABLE `t_browse_log` (
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
+-- Records of t_browse_log
+-- ----------------------------
+
+-- ----------------------------
 -- Table structure for t_log
 -- ----------------------------
 DROP TABLE IF EXISTS `t_log`;
@@ -38,6 +42,11 @@ CREATE TABLE `t_log` (
   `create_time` datetime NOT NULL ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of t_log
+-- ----------------------------
+INSERT INTO `t_log` VALUES ('1', 'admin', '123456', '2018-08-20 10:28:47');
 
 -- ----------------------------
 -- Table structure for t_order_log
@@ -51,3 +60,7 @@ CREATE TABLE `t_order_log` (
   `create_time` datetime NOT NULL ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of t_order_log
+-- ----------------------------

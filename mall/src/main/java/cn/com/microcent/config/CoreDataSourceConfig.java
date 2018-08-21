@@ -60,46 +60,46 @@ public class CoreDataSourceConfig {
     @Value("${" + DATASOURCE_PREFIX + "password}")
     private String password;
 
-    @Value("${" + DATASOURCE_PREFIX + "type}")
+    @Value("${" + "spring.datasource.type}")
     private String type;
 
-    @Value("${" + DATASOURCE_PREFIX + "initialSize}")
+    @Value("${" + "spring.datasource.initialSize}")
     private int initialSize;
 
-    @Value("${" + DATASOURCE_PREFIX + "minIdle}")
+    @Value("${" + "spring.datasource.minIdle}")
     private int minIdle;
 
-    @Value("${" + DATASOURCE_PREFIX + "maxActive}")
+    @Value("${" + "spring.datasource.maxActive}")
     private int maxActive;
 
-    @Value("${" + DATASOURCE_PREFIX + "maxWait}")
+    @Value("${" + "spring.datasource.maxWait}")
     private int maxWait;
 
-    @Value("${" + DATASOURCE_PREFIX + "maxPoolPreparedStatementPerConnectionSize}")
+    @Value("${" + "spring.datasource.maxPoolPreparedStatementPerConnectionSize}")
     private int maxPoolPreparedStatementPerConnectionSize;
 
-    @Value("${" + DATASOURCE_PREFIX + "timeBetweenEvictionRunsMillis}")
+    @Value("${" + "spring.datasource.timeBetweenEvictionRunsMillis}")
     private int timeBetweenEvictionRunsMillis;
 
-    @Value("${" + DATASOURCE_PREFIX + "minEvictableIdleTimeMillis}")
+    @Value("${" + "spring.datasource.minEvictableIdleTimeMillis}")
     private int minEvictableIdleTimeMillis;
 
-    @Value("${" + DATASOURCE_PREFIX + "validationQuery}")
+    @Value("${" + "spring.datasource.validationQuery}")
     private String validationQuery;
 
-    @Value("${" + DATASOURCE_PREFIX + "testWhileIdle}")
+    @Value("${" + "spring.datasource.testWhileIdle}")
     private boolean testWhileIdle;
 
-    @Value("${" + DATASOURCE_PREFIX + "testOnBorrow}")
+    @Value("${" + "spring.datasource.testOnBorrow}")
     private boolean testOnBorrow;
 
-    @Value("${" + DATASOURCE_PREFIX + "testOnReturn}")
+    @Value("${" + "spring.datasource.testOnReturn}")
     private boolean testOnReturn;
 
-    @Value("${" + DATASOURCE_PREFIX + "poolPreparedStatements}")
+    @Value("${" + "spring.datasource.poolPreparedStatements}")
     private boolean poolPreparedStatements;
 
-    @Value("${" + DATASOURCE_PREFIX + "filters}")
+    @Value("${" + "spring.datasource.filters}")
     private String filters;
 
     @Autowired

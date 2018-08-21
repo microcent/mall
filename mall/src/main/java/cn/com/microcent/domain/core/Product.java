@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.util.Date;
 
 /**
@@ -35,14 +36,29 @@ public class Product implements Serializable {
     @Column(name = "brand_id")
     private long brandId;
 
+    @Column(name = "image_url")
+    private String imageUrl;
+
     @Column(name = "gallery")
     private String gallery;
 
     @Column(name = "keyword")
     private String keyword;
 
+    @Column(name = "brief")
+    private String brief;
+
     @Column(name = "stock")
     private int stock;
+
+    @Column(name = "price")
+    private BigDecimal price;
+
+    @Column(name = "unit")
+    private String unit;
+
+    @Column(name = "detail")
+    private String detail;
 
     @Column(name = "create_time")
     private Date createTime;

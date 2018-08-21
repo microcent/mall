@@ -4,46 +4,47 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
+
 /**
  * Created by Administrator on 2018/8/17.
  */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Response {
+public class Response<T> implements Serializable {
 
     private ResponseCode code;
-    private Object data;
     private String msg;
+    private T data;
 
     public Response(ResponseCode code) {
         this.code = code;
     }
 
-    public final static Response success() {
+    public Response(ResponseCode code, T data) {
+        this.code = code;
+        this.data = data;
+    }
+
+    public final static <T> Response<T> success() {
         return new Response(ResponseCode.SUCCESS);
     }
 
-    public final static Response failure() {
-        return new Response(ResponseCode.ERROR);
+    public final static <T> Response<T> success(T data) {
+        return new Response(ResponseCode.SUCCESS, data);
     }
 
-    public final static <T> Response success(T t) {
-        return new Response(ResponseCode.SUCCESS).data(t);
+    public final static <T> Response<T> failure() {
+        return new Response(ResponseCode.ERROR, ResponseCode.ERROR.getDesc());
     }
 
-    public final static Response failure(String msg) {
-        return new Response(ResponseCode.ERROR).msg(msg);
+    public final static <T> Response<T> failure(String msg) {
+        return new Response(ResponseCode.ERROR, msg);
     }
 
-    public <T> Response data(T t) {
-        this.data = t;
-        return this;
-    }
-
-    public Response msg(String msg) {
-        this.msg = msg;
-        return this;
+    public final static <T> Response<T> failure(ResponseCode code, String msg) {
+        return new Response(code, msg);
     }
 
 }

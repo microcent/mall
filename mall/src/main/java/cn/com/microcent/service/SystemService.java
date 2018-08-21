@@ -1,0 +1,14 @@
+package cn.com.microcent.service;
+
+import cn.com.microcent.domain.core.System;
+
+import java.util.List;
+
+/**
+ * Created by Administrator on 2018/8/20.
+ */
+public interface SystemService {
+
+    List<System> findAll();
+
+}
