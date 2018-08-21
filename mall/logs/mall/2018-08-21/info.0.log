@@ -10095,3 +10095,879 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 [INFO ] 2018-08-21 19:07:46 [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
 [INFO ] 2018-08-21 19:07:46 [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
 [INFO ] 2018-08-21 19:07:46 [http-nio-8000-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+[INFO ] 2018-08-21 22:15:17 [main] cn.com.microcent.Application - Starting Application on DESKTOP-L18MLF6 with PID 11156 (C:\Users\xingwen\IdeaProjects\mall\mall\target\classes started by xingwen in C:\Users\xingwen\IdeaProjects\mall\mall)
+[INFO ] 2018-08-21 22:15:17 [main] cn.com.microcent.Application - The following profiles are active: dev,core,db
+[INFO ] 2018-08-21 22:15:17 [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48974e45: startup date [Tue Aug 21 22:15:18 CST 2018]; root of context hierarchy
+[INFO ] 2018-08-21 22:15:17 [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9dd2c240] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2018-08-21 22:15:17 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 2018-08-21 22:15:17 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 2018-08-21 22:15:17 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2018-08-21 22:15:17 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+[INFO ] 2018-08-21 22:15:17 [localhost-startStop-1] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_60\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\nodejs\;C:\Program Files\TortoiseSVN\bin;C:\Java\apache-maven-3.3.3\bin;C:\Program Files\Java\jdk1.8.0_60\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\Git\cmd;C:\Program Files\Redis\;C:\WINDOWS\System32\OpenSSH\;C:\Users\xingwen\AppData\Local\Microsoft\WindowsApps;C:\Users\xingwen\AppData\Roaming\npm;C:\Program Files (x86)\Microsoft VS Code\bin;;.]
+[INFO ] 2018-08-21 22:15:17 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2018-08-21 22:15:17 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 9748 ms
+[INFO ] 2018-08-21 22:15:17 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet statViewServlet mapped to [/druid/*]
+[INFO ] 2018-08-21 22:15:17 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2018-08-21 22:15:17 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2018-08-21 22:15:17 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2018-08-21 22:15:17 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2018-08-21 22:15:17 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2018-08-21 22:15:17 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+[INFO ] 2018-08-21 22:15:17 [main] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2018-08-21 22:15:17 [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'corePersistenceUnit'
+[INFO ] 2018-08-21 22:15:17 [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: corePersistenceUnit
+	...]
+[INFO ] 2018-08-21 22:15:17 [main] org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final}
+[INFO ] 2018-08-21 22:15:17 [main] org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+[INFO ] 2018-08-21 22:15:17 [main] o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[INFO ] 2018-08-21 22:15:17 [main] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+[INFO ] 2018-08-21 22:15:17 [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'corePersistenceUnit'
+[INFO ] 2018-08-21 22:15:17 [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'logPersistenceUnit'
+[INFO ] 2018-08-21 22:15:17 [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: logPersistenceUnit
+	...]
+[INFO ] 2018-08-21 22:15:17 [main] c.alibaba.druid.pool.DruidDataSource - {dataSource-2} inited
+[INFO ] 2018-08-21 22:15:17 [main] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+[INFO ] 2018-08-21 22:15:17 [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'logPersistenceUnit'
+[INFO ] 2018-08-21 22:15:17 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/address],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.AddressController.list()
+[INFO ] 2018-08-21 22:15:17 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.AdminController.list()
+[INFO ] 2018-08-21 22:15:17 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/brand],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.BrandController.list()
+[INFO ] 2018-08-21 22:15:17 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/cart],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.CartController.list()
+[INFO ] 2018-08-21 22:15:17 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/category],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.CategoryController.list()
+[INFO ] 2018-08-21 22:15:17 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/collect],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.CollectController.list()
+[INFO ] 2018-08-21 22:15:17 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/comment],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.CommentController.list()
+[INFO ] 2018-08-21 22:15:17 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.IndexController.index()
+[INFO ] 2018-08-21 22:15:17 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/issue],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.IssueController.list()
+[INFO ] 2018-08-21 22:15:17 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/log],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.LogController.list()
+[INFO ] 2018-08-21 22:15:17 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[GET]}" onto public java.lang.String cn.com.microcent.controller.LoginController.login(org.springframework.ui.ModelMap)
+[INFO ] 2018-08-21 22:15:17 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/order],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.OrderController.list()
+[INFO ] 2018-08-21 22:15:17 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.ProductController.list()
+[INFO ] 2018-08-21 22:15:17 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/region],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.RegionController.list()
+[INFO ] 2018-08-21 22:15:17 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/system],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.SystemController.list()
+[INFO ] 2018-08-21 22:15:17 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.UserController.list()
+[INFO ] 2018-08-21 22:15:17 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/{id}],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.UserController.user(java.lang.Long)
+[INFO ] 2018-08-21 22:15:17 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+[INFO ] 2018-08-21 22:15:17 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+[INFO ] 2018-08-21 22:15:17 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+[INFO ] 2018-08-21 22:15:17 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+[INFO ] 2018-08-21 22:15:17 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-08-21 22:15:17 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2018-08-21 22:15:17 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-08-21 22:15:17 [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48974e45: startup date [Tue Aug 21 22:15:18 CST 2018]; root of context hierarchy
+[INFO ] 2018-08-21 22:15:17 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-08-21 22:15:17 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-08-21 22:15:17 [main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2018-08-21 22:15:17 [main] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'coreDatasource' has been autodetected for JMX exposure
+[INFO ] 2018-08-21 22:15:17 [main] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'logDatasource' has been autodetected for JMX exposure
+[INFO ] 2018-08-21 22:15:17 [main] o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'coreDatasource': registering with JMX server as MBean [com.alibaba.druid.pool:name=coreDatasource,type=DruidDataSource]
+[INFO ] 2018-08-21 22:15:17 [main] o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'logDatasource': registering with JMX server as MBean [com.alibaba.druid.pool:name=logDatasource,type=DruidDataSource]
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Found {0} custom documentation plugin(s)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 收货地址模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='收货地址模块', position=0, controller=cn.com.microcent.controller.AddressController}]] 
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 管理员模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='管理员模块', position=0, controller=cn.com.microcent.controller.AdminController}]] 
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 品牌模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='品牌模块', position=0, controller=cn.com.microcent.controller.BrandController}]] 
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 购物车模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='购物车模块', position=0, controller=cn.com.microcent.controller.CartController}]] 
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 分类模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='分类模块', position=0, controller=cn.com.microcent.controller.CategoryController}]] 
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 收藏模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='收藏模块', position=0, controller=cn.com.microcent.controller.CollectController}]] 
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 评论模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='评论模块', position=0, controller=cn.com.microcent.controller.CommentController}]] 
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method index was 首页模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: index belongs to groups: [[ResourceGroup{groupName='首页模块', position=0, controller=cn.com.microcent.controller.IndexController}]] 
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 问题模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='问题模块', position=0, controller=cn.com.microcent.controller.IssueController}]] 
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 日志模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='日志模块', position=0, controller=cn.com.microcent.controller.LogController}]] 
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 订单模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='订单模块', position=0, controller=cn.com.microcent.controller.OrderController}]] 
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 商品模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='商品模块', position=0, controller=cn.com.microcent.controller.ProductController}]] 
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 区域模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='区域模块', position=0, controller=cn.com.microcent.controller.RegionController}]] 
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 系统模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='系统模块', position=0, controller=cn.com.microcent.controller.SystemController}]] 
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method login was 用户模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: login belongs to groups: [[ResourceGroup{groupName='用户模块', position=0, controller=cn.com.microcent.controller.LoginController}]] 
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method user was 用户模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: user belongs to groups: [[ResourceGroup{groupName='用户模块', position=0, controller=cn.com.microcent.controller.UserController}]] 
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 用户模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='用户模块', position=0, controller=cn.com.microcent.controller.UserController}]] 
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/日志模块 Description: 日志模块 Position: 0
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/问题模块 Description: 问题模块 Position: 0
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/品牌模块 Description: 品牌模块 Position: 0
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/首页模块 Description: 首页模块 Position: 0
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/商品模块 Description: 商品模块 Position: 0
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/订单模块 Description: 订单模块 Position: 0
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/购物车模块 Description: 购物车模块 Position: 0
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/区域模块 Description: 区域模块 Position: 0
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/管理员模块 Description: 管理员模块 Position: 0
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/用户模块 Description: 用户模块 Position: 0
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/收藏模块 Description: 收藏模块 Position: 0
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/用户模块 Description: 用户模块 Position: 0
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/系统模块 Description: 系统模块 Position: 0
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/评论模块 Description: 评论模块 Position: 0
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/收货地址模块 Description: 收货地址模块 Position: 0
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/分类模块 Description: 分类模块 Position: 0
+[INFO ] 2018-08-21 22:15:17 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /category.cn.com.microcent.controller.CategoryController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /category.cn.com.microcent.controller.CategoryController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 分类模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 分类模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /region.cn.com.microcent.controller.RegionController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /region.cn.com.microcent.controller.RegionController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 区域模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 区域模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_1
+[INFO ] 2018-08-21 22:15:17 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /brand.cn.com.microcent.controller.BrandController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /brand.cn.com.microcent.controller.BrandController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 品牌模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 品牌模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_2
+[INFO ] 2018-08-21 22:15:17 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /product.cn.com.microcent.controller.ProductController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /product.cn.com.microcent.controller.ProductController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 商品模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 商品模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_3
+[INFO ] 2018-08-21 22:15:17 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /collect.cn.com.microcent.controller.CollectController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /collect.cn.com.microcent.controller.CollectController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 收藏模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 收藏模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_4
+[INFO ] 2018-08-21 22:15:17 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /address.cn.com.microcent.controller.AddressController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /address.cn.com.microcent.controller.AddressController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 收货地址模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 收货地址模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_5
+[INFO ] 2018-08-21 22:15:17 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.Void(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.Void(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.Void(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.Void(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /log.cn.com.microcent.controller.LogController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /log.cn.com.microcent.controller.LogController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 日志模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 日志模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_6
+[INFO ] 2018-08-21 22:15:17 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.Void(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.Void(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.Void(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.Void(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.String(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /user/login.cn.com.microcent.controller.LoginController.login.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /user/login.cn.com.microcent.controller.LoginController.login.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method login was 用户模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method login was 用户模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.Void(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.Void(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.Void(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.Void(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /user.cn.com.microcent.controller.UserController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /user.cn.com.microcent.controller.UserController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 用户模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 用户模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_7
+[INFO ] 2018-08-21 22:15:17 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /user/{id}.cn.com.microcent.controller.UserController.user.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /user/{id}.cn.com.microcent.controller.UserController.user.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method user was 用户模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method user was 用户模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /admin.cn.com.microcent.controller.AdminController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /admin.cn.com.microcent.controller.AdminController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 管理员模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 管理员模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_8
+[INFO ] 2018-08-21 22:15:17 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /system.cn.com.microcent.controller.SystemController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /system.cn.com.microcent.controller.SystemController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 系统模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 系统模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_9
+[INFO ] 2018-08-21 22:15:17 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /order.cn.com.microcent.controller.OrderController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /order.cn.com.microcent.controller.OrderController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 订单模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 订单模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_10
+[INFO ] 2018-08-21 22:15:17 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /comment.cn.com.microcent.controller.CommentController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /comment.cn.com.microcent.controller.CommentController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 评论模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 评论模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_11
+[INFO ] 2018-08-21 22:15:17 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /cart.cn.com.microcent.controller.CartController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /cart.cn.com.microcent.controller.CartController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 购物车模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 购物车模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_12
+[INFO ] 2018-08-21 22:15:17 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /issue.cn.com.microcent.controller.IssueController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /issue.cn.com.microcent.controller.IssueController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 问题模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 问题模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_13
+[INFO ] 2018-08-21 22:15:17 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /index.cn.com.microcent.controller.IndexController.index.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:15:17 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /index.cn.com.microcent.controller.IndexController.index.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method index was 首页模块
+[INFO ] 2018-08-21 22:15:17 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method index was 首页模块
+[INFO ] 2018-08-21 22:15:17 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 2018-08-21 22:15:17 [main] o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2018-08-21 22:15:17 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 2018-08-21 22:15:17 [main] cn.com.microcent.Application - Started Application in 32.449 seconds (JVM running for 33.98)
+[INFO ] 2018-08-21 22:15:17 [http-nio-8000-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2018-08-21 22:15:17 [http-nio-8000-exec-10] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2018-08-21 22:15:17 [http-nio-8000-exec-10] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 115 ms
+[INFO ] 2018-08-21 22:15:17 [http-nio-8000-exec-10] o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+[INFO ] 2018-08-21 22:54:04 [main] cn.com.microcent.Application - Starting Application on DESKTOP-L18MLF6 with PID 5888 (C:\Users\xingwen\IdeaProjects\mall\mall\target\classes started by xingwen in C:\Users\xingwen\IdeaProjects\mall\mall)
+[INFO ] 2018-08-21 22:54:04 [main] cn.com.microcent.Application - The following profiles are active: dev,core,db
+[INFO ] 2018-08-21 22:54:04 [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@10163d6: startup date [Tue Aug 21 22:54:05 CST 2018]; root of context hierarchy
+[INFO ] 2018-08-21 22:54:04 [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6707afd8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2018-08-21 22:54:04 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 2018-08-21 22:54:04 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 2018-08-21 22:54:04 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2018-08-21 22:54:04 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+[INFO ] 2018-08-21 22:54:04 [localhost-startStop-1] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_60\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\nodejs\;C:\Program Files\TortoiseSVN\bin;C:\Java\apache-maven-3.3.3\bin;C:\Program Files\Java\jdk1.8.0_60\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\Git\cmd;C:\Program Files\Redis\;C:\WINDOWS\System32\OpenSSH\;C:\Users\xingwen\AppData\Local\Microsoft\WindowsApps;C:\Users\xingwen\AppData\Roaming\npm;C:\Program Files (x86)\Microsoft VS Code\bin;;.]
+[INFO ] 2018-08-21 22:54:04 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2018-08-21 22:54:04 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4540 ms
+[INFO ] 2018-08-21 22:54:04 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet statViewServlet mapped to [/druid/*]
+[INFO ] 2018-08-21 22:54:04 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2018-08-21 22:54:04 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2018-08-21 22:54:04 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2018-08-21 22:54:04 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2018-08-21 22:54:04 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2018-08-21 22:54:04 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+[INFO ] 2018-08-21 22:54:04 [main] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2018-08-21 22:54:04 [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'corePersistenceUnit'
+[INFO ] 2018-08-21 22:54:04 [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: corePersistenceUnit
+	...]
+[INFO ] 2018-08-21 22:54:04 [main] org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final}
+[INFO ] 2018-08-21 22:54:04 [main] org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+[INFO ] 2018-08-21 22:54:04 [main] o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[INFO ] 2018-08-21 22:54:04 [main] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+[INFO ] 2018-08-21 22:54:04 [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'corePersistenceUnit'
+[INFO ] 2018-08-21 22:54:04 [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'logPersistenceUnit'
+[INFO ] 2018-08-21 22:54:04 [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: logPersistenceUnit
+	...]
+[INFO ] 2018-08-21 22:54:04 [main] c.alibaba.druid.pool.DruidDataSource - {dataSource-2} inited
+[INFO ] 2018-08-21 22:54:04 [main] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+[INFO ] 2018-08-21 22:54:04 [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'logPersistenceUnit'
+[INFO ] 2018-08-21 22:54:04 [main] o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+[INFO ] 2018-08-21 22:54:04 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/address],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.AddressController.list()
+[INFO ] 2018-08-21 22:54:04 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.AdminController.list()
+[INFO ] 2018-08-21 22:54:04 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/brand],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.BrandController.list()
+[INFO ] 2018-08-21 22:54:04 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/cart],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.CartController.list()
+[INFO ] 2018-08-21 22:54:04 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/category],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.CategoryController.list()
+[INFO ] 2018-08-21 22:54:04 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/collect],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.CollectController.list()
+[INFO ] 2018-08-21 22:54:04 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/comment],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.CommentController.list()
+[INFO ] 2018-08-21 22:54:04 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.IndexController.index()
+[INFO ] 2018-08-21 22:54:04 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/issue],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.IssueController.list()
+[INFO ] 2018-08-21 22:54:04 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/log],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.LogController.list()
+[INFO ] 2018-08-21 22:54:04 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[GET]}" onto public java.lang.String cn.com.microcent.controller.LoginController.login(org.springframework.ui.ModelMap)
+[INFO ] 2018-08-21 22:54:04 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/order],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.OrderController.list()
+[INFO ] 2018-08-21 22:54:04 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.ProductController.list()
+[INFO ] 2018-08-21 22:54:04 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/region],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.RegionController.list()
+[INFO ] 2018-08-21 22:54:04 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/system],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.SystemController.list()
+[INFO ] 2018-08-21 22:54:04 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.UserController.list()
+[INFO ] 2018-08-21 22:54:04 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/{id}],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.UserController.user(java.lang.Long)
+[INFO ] 2018-08-21 22:54:04 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+[INFO ] 2018-08-21 22:54:04 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+[INFO ] 2018-08-21 22:54:04 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+[INFO ] 2018-08-21 22:54:04 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+[INFO ] 2018-08-21 22:54:04 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-08-21 22:54:04 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2018-08-21 22:54:04 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-08-21 22:54:04 [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@10163d6: startup date [Tue Aug 21 22:54:05 CST 2018]; root of context hierarchy
+[INFO ] 2018-08-21 22:54:04 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-08-21 22:54:04 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-08-21 22:54:04 [main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2018-08-21 22:54:04 [main] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'coreDatasource' has been autodetected for JMX exposure
+[INFO ] 2018-08-21 22:54:04 [main] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'logDatasource' has been autodetected for JMX exposure
+[INFO ] 2018-08-21 22:54:04 [main] o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'coreDatasource': registering with JMX server as MBean [com.alibaba.druid.pool:name=coreDatasource,type=DruidDataSource]
+[INFO ] 2018-08-21 22:54:04 [main] o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'logDatasource': registering with JMX server as MBean [com.alibaba.druid.pool:name=logDatasource,type=DruidDataSource]
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Found {0} custom documentation plugin(s)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 收货地址模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='收货地址模块', position=0, controller=cn.com.microcent.controller.AddressController}]] 
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 管理员模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='管理员模块', position=0, controller=cn.com.microcent.controller.AdminController}]] 
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 品牌模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='品牌模块', position=0, controller=cn.com.microcent.controller.BrandController}]] 
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 购物车模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='购物车模块', position=0, controller=cn.com.microcent.controller.CartController}]] 
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 分类模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='分类模块', position=0, controller=cn.com.microcent.controller.CategoryController}]] 
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 收藏模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='收藏模块', position=0, controller=cn.com.microcent.controller.CollectController}]] 
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 评论模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='评论模块', position=0, controller=cn.com.microcent.controller.CommentController}]] 
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method index was 首页模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: index belongs to groups: [[ResourceGroup{groupName='首页模块', position=0, controller=cn.com.microcent.controller.IndexController}]] 
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 问题模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='问题模块', position=0, controller=cn.com.microcent.controller.IssueController}]] 
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 日志模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='日志模块', position=0, controller=cn.com.microcent.controller.LogController}]] 
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 订单模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='订单模块', position=0, controller=cn.com.microcent.controller.OrderController}]] 
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 商品模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='商品模块', position=0, controller=cn.com.microcent.controller.ProductController}]] 
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 区域模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='区域模块', position=0, controller=cn.com.microcent.controller.RegionController}]] 
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 系统模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='系统模块', position=0, controller=cn.com.microcent.controller.SystemController}]] 
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method login was 用户模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: login belongs to groups: [[ResourceGroup{groupName='用户模块', position=0, controller=cn.com.microcent.controller.LoginController}]] 
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method user was 用户模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: user belongs to groups: [[ResourceGroup{groupName='用户模块', position=0, controller=cn.com.microcent.controller.UserController}]] 
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 用户模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='用户模块', position=0, controller=cn.com.microcent.controller.UserController}]] 
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/购物车模块 Description: 购物车模块 Position: 0
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/分类模块 Description: 分类模块 Position: 0
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/用户模块 Description: 用户模块 Position: 0
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/收货地址模块 Description: 收货地址模块 Position: 0
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/收藏模块 Description: 收藏模块 Position: 0
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/用户模块 Description: 用户模块 Position: 0
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/订单模块 Description: 订单模块 Position: 0
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/日志模块 Description: 日志模块 Position: 0
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/问题模块 Description: 问题模块 Position: 0
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/区域模块 Description: 区域模块 Position: 0
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/商品模块 Description: 商品模块 Position: 0
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/管理员模块 Description: 管理员模块 Position: 0
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/品牌模块 Description: 品牌模块 Position: 0
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/评论模块 Description: 评论模块 Position: 0
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/首页模块 Description: 首页模块 Position: 0
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/系统模块 Description: 系统模块 Position: 0
+[INFO ] 2018-08-21 22:54:04 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /category.cn.com.microcent.controller.CategoryController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /category.cn.com.microcent.controller.CategoryController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 分类模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 分类模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /region.cn.com.microcent.controller.RegionController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /region.cn.com.microcent.controller.RegionController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 区域模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 区域模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_1
+[INFO ] 2018-08-21 22:54:04 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /brand.cn.com.microcent.controller.BrandController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /brand.cn.com.microcent.controller.BrandController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 品牌模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 品牌模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_2
+[INFO ] 2018-08-21 22:54:04 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /product.cn.com.microcent.controller.ProductController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /product.cn.com.microcent.controller.ProductController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 商品模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 商品模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_3
+[INFO ] 2018-08-21 22:54:04 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /collect.cn.com.microcent.controller.CollectController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /collect.cn.com.microcent.controller.CollectController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 收藏模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 收藏模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_4
+[INFO ] 2018-08-21 22:54:04 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /address.cn.com.microcent.controller.AddressController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /address.cn.com.microcent.controller.AddressController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 收货地址模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 收货地址模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_5
+[INFO ] 2018-08-21 22:54:04 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.Void(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.Void(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.Void(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.Void(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /log.cn.com.microcent.controller.LogController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /log.cn.com.microcent.controller.LogController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 日志模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 日志模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_6
+[INFO ] 2018-08-21 22:54:04 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.Void(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.Void(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.Void(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.Void(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.String(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /user/login.cn.com.microcent.controller.LoginController.login.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /user/login.cn.com.microcent.controller.LoginController.login.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method login was 用户模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method login was 用户模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.Void(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.Void(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.Void(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.Void(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /user.cn.com.microcent.controller.UserController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /user.cn.com.microcent.controller.UserController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 用户模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 用户模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_7
+[INFO ] 2018-08-21 22:54:04 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /user/{id}.cn.com.microcent.controller.UserController.user.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /user/{id}.cn.com.microcent.controller.UserController.user.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method user was 用户模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method user was 用户模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /admin.cn.com.microcent.controller.AdminController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /admin.cn.com.microcent.controller.AdminController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 管理员模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 管理员模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_8
+[INFO ] 2018-08-21 22:54:04 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /system.cn.com.microcent.controller.SystemController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /system.cn.com.microcent.controller.SystemController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 系统模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 系统模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_9
+[INFO ] 2018-08-21 22:54:04 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /order.cn.com.microcent.controller.OrderController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /order.cn.com.microcent.controller.OrderController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 订单模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 订单模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_10
+[INFO ] 2018-08-21 22:54:04 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /comment.cn.com.microcent.controller.CommentController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /comment.cn.com.microcent.controller.CommentController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 评论模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 评论模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_11
+[INFO ] 2018-08-21 22:54:04 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /cart.cn.com.microcent.controller.CartController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /cart.cn.com.microcent.controller.CartController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 购物车模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 购物车模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_12
+[INFO ] 2018-08-21 22:54:04 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /issue.cn.com.microcent.controller.IssueController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /issue.cn.com.microcent.controller.IssueController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 问题模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 问题模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_13
+[INFO ] 2018-08-21 22:54:04 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /index.cn.com.microcent.controller.IndexController.index.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:54:04 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /index.cn.com.microcent.controller.IndexController.index.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method index was 首页模块
+[INFO ] 2018-08-21 22:54:04 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method index was 首页模块
+[INFO ] 2018-08-21 22:54:04 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 2018-08-21 22:54:04 [main] o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2018-08-21 22:54:04 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 2018-08-21 22:54:04 [main] cn.com.microcent.Application - Started Application in 14.859 seconds (JVM running for 15.864)
+[INFO ] 2018-08-21 22:56:33 [main] cn.com.microcent.Application - Starting Application on DESKTOP-L18MLF6 with PID 9824 (C:\Users\xingwen\IdeaProjects\mall\mall\target\classes started by xingwen in C:\Users\xingwen\IdeaProjects\mall\mall)
+[INFO ] 2018-08-21 22:56:33 [main] cn.com.microcent.Application - The following profiles are active: dev,core,db
+[INFO ] 2018-08-21 22:56:33 [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@22e357dc: startup date [Tue Aug 21 22:56:34 CST 2018]; root of context hierarchy
+[INFO ] 2018-08-21 22:56:33 [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f0d8907a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO ] 2018-08-21 22:56:33 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8000 (http)
+[INFO ] 2018-08-21 22:56:33 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8000"]
+[INFO ] 2018-08-21 22:56:33 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2018-08-21 22:56:33 [main] o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+[INFO ] 2018-08-21 22:56:33 [localhost-startStop-1] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_60\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\nodejs\;C:\Program Files\TortoiseSVN\bin;C:\Java\apache-maven-3.3.3\bin;C:\Program Files\Java\jdk1.8.0_60\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\Git\cmd;C:\Program Files\Redis\;C:\WINDOWS\System32\OpenSSH\;C:\Users\xingwen\AppData\Local\Microsoft\WindowsApps;C:\Users\xingwen\AppData\Roaming\npm;C:\Program Files (x86)\Microsoft VS Code\bin;;.]
+[INFO ] 2018-08-21 22:56:33 [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2018-08-21 22:56:33 [localhost-startStop-1] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 6727 ms
+[INFO ] 2018-08-21 22:56:33 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet statViewServlet mapped to [/druid/*]
+[INFO ] 2018-08-21 22:56:33 [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[INFO ] 2018-08-21 22:56:33 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[INFO ] 2018-08-21 22:56:33 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[INFO ] 2018-08-21 22:56:33 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[INFO ] 2018-08-21 22:56:33 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[INFO ] 2018-08-21 22:56:33 [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+[INFO ] 2018-08-21 22:56:33 [main] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2018-08-21 22:56:33 [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'corePersistenceUnit'
+[INFO ] 2018-08-21 22:56:33 [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: corePersistenceUnit
+	...]
+[INFO ] 2018-08-21 22:56:33 [main] org.hibernate.Version - HHH000412: Hibernate Core {5.2.17.Final}
+[INFO ] 2018-08-21 22:56:33 [main] org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+[INFO ] 2018-08-21 22:56:33 [main] o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[INFO ] 2018-08-21 22:56:33 [main] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+[INFO ] 2018-08-21 22:56:33 [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'corePersistenceUnit'
+[INFO ] 2018-08-21 22:56:33 [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'logPersistenceUnit'
+[INFO ] 2018-08-21 22:56:33 [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: logPersistenceUnit
+	...]
+[INFO ] 2018-08-21 22:56:33 [main] c.alibaba.druid.pool.DruidDataSource - {dataSource-2} inited
+[INFO ] 2018-08-21 22:56:33 [main] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+[INFO ] 2018-08-21 22:56:33 [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'logPersistenceUnit'
+[INFO ] 2018-08-21 22:56:33 [main] o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+[INFO ] 2018-08-21 22:56:33 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/address],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.AddressController.list()
+[INFO ] 2018-08-21 22:56:33 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.AdminController.list()
+[INFO ] 2018-08-21 22:56:33 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/brand],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.BrandController.list()
+[INFO ] 2018-08-21 22:56:33 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/cart],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.CartController.list()
+[INFO ] 2018-08-21 22:56:33 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/category],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.CategoryController.list()
+[INFO ] 2018-08-21 22:56:33 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/collect],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.CollectController.list()
+[INFO ] 2018-08-21 22:56:33 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/comment],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.CommentController.list()
+[INFO ] 2018-08-21 22:56:33 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.IndexController.index()
+[INFO ] 2018-08-21 22:56:33 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/issue],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.IssueController.list()
+[INFO ] 2018-08-21 22:56:33 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/log],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.LogController.list()
+[INFO ] 2018-08-21 22:56:33 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[GET]}" onto public java.lang.String cn.com.microcent.controller.LoginController.login(org.springframework.ui.ModelMap)
+[INFO ] 2018-08-21 22:56:33 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/order],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.OrderController.list()
+[INFO ] 2018-08-21 22:56:33 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/product],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.ProductController.list()
+[INFO ] 2018-08-21 22:56:33 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/region],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.RegionController.list()
+[INFO ] 2018-08-21 22:56:33 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/system],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.SystemController.list()
+[INFO ] 2018-08-21 22:56:33 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.UserController.list()
+[INFO ] 2018-08-21 22:56:33 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/{id}],methods=[GET]}" onto public cn.com.microcent.entity.Response cn.com.microcent.controller.UserController.user(java.lang.Long)
+[INFO ] 2018-08-21 22:56:33 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+[INFO ] 2018-08-21 22:56:33 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+[INFO ] 2018-08-21 22:56:33 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+[INFO ] 2018-08-21 22:56:33 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+[INFO ] 2018-08-21 22:56:33 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[INFO ] 2018-08-21 22:56:33 [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[INFO ] 2018-08-21 22:56:33 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-08-21 22:56:33 [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@22e357dc: startup date [Tue Aug 21 22:56:34 CST 2018]; root of context hierarchy
+[INFO ] 2018-08-21 22:56:33 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-08-21 22:56:33 [main] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[INFO ] 2018-08-21 22:56:33 [main] o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+[INFO ] 2018-08-21 22:56:33 [main] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'coreDatasource' has been autodetected for JMX exposure
+[INFO ] 2018-08-21 22:56:33 [main] o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'logDatasource' has been autodetected for JMX exposure
+[INFO ] 2018-08-21 22:56:33 [main] o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'coreDatasource': registering with JMX server as MBean [com.alibaba.druid.pool:name=coreDatasource,type=DruidDataSource]
+[INFO ] 2018-08-21 22:56:33 [main] o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'logDatasource': registering with JMX server as MBean [com.alibaba.druid.pool:name=logDatasource,type=DruidDataSource]
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.p.DocumentationPluginsBootstrapper - Found {0} custom documentation plugin(s)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 收货地址模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='收货地址模块', position=0, controller=cn.com.microcent.controller.AddressController}]] 
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 管理员模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='管理员模块', position=0, controller=cn.com.microcent.controller.AdminController}]] 
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 品牌模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='品牌模块', position=0, controller=cn.com.microcent.controller.BrandController}]] 
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 购物车模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='购物车模块', position=0, controller=cn.com.microcent.controller.CartController}]] 
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 分类模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='分类模块', position=0, controller=cn.com.microcent.controller.CategoryController}]] 
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 收藏模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='收藏模块', position=0, controller=cn.com.microcent.controller.CollectController}]] 
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 评论模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='评论模块', position=0, controller=cn.com.microcent.controller.CommentController}]] 
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method index was 首页模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: index belongs to groups: [[ResourceGroup{groupName='首页模块', position=0, controller=cn.com.microcent.controller.IndexController}]] 
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 问题模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='问题模块', position=0, controller=cn.com.microcent.controller.IssueController}]] 
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 日志模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='日志模块', position=0, controller=cn.com.microcent.controller.LogController}]] 
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 订单模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='订单模块', position=0, controller=cn.com.microcent.controller.OrderController}]] 
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 商品模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='商品模块', position=0, controller=cn.com.microcent.controller.ProductController}]] 
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 区域模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='区域模块', position=0, controller=cn.com.microcent.controller.RegionController}]] 
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 系统模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='系统模块', position=0, controller=cn.com.microcent.controller.SystemController}]] 
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method login was 用户模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: login belongs to groups: [[ResourceGroup{groupName='用户模块', position=0, controller=cn.com.microcent.controller.LoginController}]] 
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method user was 用户模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: user belongs to groups: [[ResourceGroup{groupName='用户模块', position=0, controller=cn.com.microcent.controller.UserController}]] 
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 用户模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: list belongs to groups: [[ResourceGroup{groupName='用户模块', position=0, controller=cn.com.microcent.controller.UserController}]] 
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/日志模块 Description: 日志模块 Position: 0
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/系统模块 Description: 系统模块 Position: 0
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/用户模块 Description: 用户模块 Position: 0
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/问题模块 Description: 问题模块 Position: 0
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/管理员模块 Description: 管理员模块 Position: 0
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/购物车模块 Description: 购物车模块 Position: 0
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/首页模块 Description: 首页模块 Position: 0
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/区域模块 Description: 区域模块 Position: 0
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/评论模块 Description: 评论模块 Position: 0
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/收藏模块 Description: 收藏模块 Position: 0
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/分类模块 Description: 分类模块 Position: 0
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/订单模块 Description: 订单模块 Position: 0
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/用户模块 Description: 用户模块 Position: 0
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/收货地址模块 Description: 收货地址模块 Position: 0
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/商品模块 Description: 商品模块 Position: 0
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/品牌模块 Description: 品牌模块 Position: 0
+[INFO ] 2018-08-21 22:56:33 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.p.ModelPropertiesKeyGenerator - Cache key generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelProperties with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /category.cn.com.microcent.controller.CategoryController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /category.cn.com.microcent.controller.CategoryController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 分类模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 分类模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /region.cn.com.microcent.controller.RegionController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /region.cn.com.microcent.controller.RegionController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 区域模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 区域模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_1
+[INFO ] 2018-08-21 22:56:33 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /brand.cn.com.microcent.controller.BrandController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /brand.cn.com.microcent.controller.BrandController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 品牌模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 品牌模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_2
+[INFO ] 2018-08-21 22:56:33 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /product.cn.com.microcent.controller.ProductController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /product.cn.com.microcent.controller.ProductController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 商品模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 商品模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_3
+[INFO ] 2018-08-21 22:56:33 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /collect.cn.com.microcent.controller.CollectController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /collect.cn.com.microcent.controller.CollectController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 收藏模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 收藏模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_4
+[INFO ] 2018-08-21 22:56:33 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /address.cn.com.microcent.controller.AddressController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /address.cn.com.microcent.controller.AddressController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 收货地址模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 收货地址模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_5
+[INFO ] 2018-08-21 22:56:33 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.Void(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.Void(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.Void(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.Void(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /log.cn.com.microcent.controller.LogController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /log.cn.com.microcent.controller.LogController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 日志模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 日志模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_6
+[INFO ] 2018-08-21 22:56:33 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.Void(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.Void(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.Void(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.Void(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.String(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.String(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /user/login.cn.com.microcent.controller.LoginController.login.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /user/login.cn.com.microcent.controller.LoginController.login.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method login was 用户模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method login was 用户模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.Void(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key java.lang.Void(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: java.lang.Void(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key java.lang.Void(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /user.cn.com.microcent.controller.UserController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /user.cn.com.microcent.controller.UserController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 用户模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 用户模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_7
+[INFO ] 2018-08-21 22:56:33 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /user/{id}.cn.com.microcent.controller.UserController.user.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /user/{id}.cn.com.microcent.controller.UserController.user.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method user was 用户模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method user was 用户模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /admin.cn.com.microcent.controller.AdminController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /admin.cn.com.microcent.controller.AdminController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 管理员模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 管理员模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_8
+[INFO ] 2018-08-21 22:56:33 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /system.cn.com.microcent.controller.SystemController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /system.cn.com.microcent.controller.SystemController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 系统模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 系统模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_9
+[INFO ] 2018-08-21 22:56:33 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /order.cn.com.microcent.controller.OrderController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /order.cn.com.microcent.controller.OrderController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 订单模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 订单模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_10
+[INFO ] 2018-08-21 22:56:33 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /comment.cn.com.microcent.controller.CommentController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /comment.cn.com.microcent.controller.CommentController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 评论模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 评论模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_11
+[INFO ] 2018-08-21 22:56:33 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /cart.cn.com.microcent.controller.CartController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /cart.cn.com.microcent.controller.CartController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 购物车模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 购物车模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_12
+[INFO ] 2018-08-21 22:56:33 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /issue.cn.com.microcent.controller.IssueController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /issue.cn.com.microcent.controller.IssueController.list.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 问题模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method list was 问题模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_13
+[INFO ] 2018-08-21 22:56:33 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache models with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.schema.ModelContextKeyGenerator - Cache Key Generated: cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache modelDependencies with key cn.com.microcent.entity.Response(true)
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.web.OperationsKeyGenerator - Cache key generated: /index.cn.com.microcent.controller.IndexController.index.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:56:33 [main] s.d.spring.web.caching.CachingAspect - Caching aspect applied for cache operations with key /index.cn.com.microcent.controller.IndexController.index.CodeGenGenericTypeNamingStrategy
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method index was 首页模块
+[INFO ] 2018-08-21 22:56:33 [main] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method index was 首页模块
+[INFO ] 2018-08-21 22:56:33 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8000"]
+[INFO ] 2018-08-21 22:56:33 [main] o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+[INFO ] 2018-08-21 22:56:33 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8000 (http) with context path ''
+[INFO ] 2018-08-21 22:56:33 [main] cn.com.microcent.Application - Started Application in 23.304 seconds (JVM running for 24.348)
+[INFO ] 2018-08-21 22:56:33 [http-nio-8000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2018-08-21 22:56:33 [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+[INFO ] 2018-08-21 22:56:33 [http-nio-8000-exec-1] o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 47 ms

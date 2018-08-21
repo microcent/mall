@@ -1,16 +1,16 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : Local
-Source Server Version : 50628
+Source Server         : local
+Source Server Version : 50719
 Source Host           : localhost:3306
 Source Database       : mall
 
 Target Server Type    : MYSQL
-Target Server Version : 50628
+Target Server Version : 50719
 File Encoding         : 65001
 
-Date: 2018-08-21 19:05:39
+Date: 2018-08-21 22:59:31
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -2826,11 +2826,12 @@ CREATE TABLE `t_system` (
   `key` varchar(255) NOT NULL,
   `value` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of t_system
 -- ----------------------------
+INSERT INTO `t_system` VALUES ('1', 'mall.system.limit.brand', '4');
 
 -- ----------------------------
 -- Table structure for t_user
