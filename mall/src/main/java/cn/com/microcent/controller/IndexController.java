@@ -3,15 +3,19 @@ package cn.com.microcent.controller;
 import cn.com.microcent.domain.core.Ad;
 import cn.com.microcent.domain.core.Brand;
 import cn.com.microcent.domain.core.Cart;
+import cn.com.microcent.domain.core.Category;
 import cn.com.microcent.entity.Response;
 import cn.com.microcent.service.AdService;
 import cn.com.microcent.service.BrandService;
 import cn.com.microcent.service.CartService;
+import cn.com.microcent.service.CategoryService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -34,6 +38,9 @@ public class IndexController {
     private AdService adService;
 
     @Autowired
+    private CategoryService categoryService;
+
+    @Autowired
     private BrandService brandService;
 
     @Autowired
@@ -43,10 +50,12 @@ public class IndexController {
     @RequestMapping(value = "", method = RequestMethod.GET)
     public Response index() {
         List<Ad> banners = this.adService.findTop5();
-        List<Brand> brands = this.brandService.findAll();
+        List<Category> channels = this.categoryService.findTop5();
+        List<Brand> brands = this.brandService.findTop4();
         List<Cart> carts = this.cartService.findAll();
         Map<String, Object> map = new HashMap<>();
         map.put("banners", banners);
+        map.put("channels", channels);
         map.put("brands", brands);
         map.put("carts", carts);
         return Response.success(map);

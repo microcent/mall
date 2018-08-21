@@ -1,6 +1,7 @@
 package cn.com.microcent.service;
 
 import cn.com.microcent.domain.core.Category;
+import org.springframework.data.domain.Pageable;
 
 import java.util.List;
 
@@ -10,5 +11,7 @@ import java.util.List;
 public interface CategoryService {
 
     List<Category> findAll();
+
+    List<Category> findTop5();
 
 }

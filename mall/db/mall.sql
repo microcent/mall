@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50628
 File Encoding         : 65001
 
-Date: 2018-08-21 18:12:28
+Date: 2018-08-21 19:05:39
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -2858,17 +2858,3 @@ CREATE TABLE `t_user` (
 -- Records of t_user
 -- ----------------------------
 INSERT INTO `t_user` VALUES ('1', 'admin', '123456', '', '0', null, '1', '', '', '0', '', '2018-08-21 14:33:39', null, '2018-08-21 14:33:39');
-
--- ----------------------------
--- Procedure structure for proc_top5_brand
--- ----------------------------
-DROP PROCEDURE IF EXISTS `proc_top5_brand`;
-DELIMITER ;;
-CREATE DEFINER=`root`@`%` PROCEDURE `proc_top5_brand`()
-BEGIN
-	
-	SELECT * FROM t_brand ORDER BY create_time DESC LIMIT 0,5;
-
-END
-;;
-DELIMITER ;

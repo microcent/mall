@@ -9,7 +9,7 @@
   </swiper>
   <view class="m-menu">
     <navigator class="item" url="/pages/category/index?id={{item.id}}" wx:for="{{channel}}" wx:key="id">
-      <image src="{{item.iconUrl}}" background-size="cover"></image>
+      <image src="{{item.logoUrl}}" background-size="cover"></image>
       <text>{{item.name}}</text>
     </navigator>
   </view>
@@ -58,7 +58,7 @@
       <view class="item item-1" wx:for="{{brands}}" wx:key="id">
         <navigator url="/pages/brandDetail/brandDetail?id={{item.id}}">
           <view class="wrap">
-            <image class="img" src="{{item.picUrl}}" mode="aspectFill"></image>
+            <image class="img" src="{{item.logoUrl}}" mode="aspectFill"></image>
             <view class="mt">
               <text class="brand">{{item.name}}</text>
               <text class="price">{{item.floorPrice}}</text>
