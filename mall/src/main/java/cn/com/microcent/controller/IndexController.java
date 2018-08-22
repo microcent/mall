@@ -1,5 +1,6 @@
 package cn.com.microcent.controller;
 
+import cn.com.microcent.core.SystemConfig;
 import cn.com.microcent.domain.core.Ad;
 import cn.com.microcent.domain.core.Brand;
 import cn.com.microcent.domain.core.Cart;
@@ -58,6 +59,7 @@ public class IndexController {
         map.put("channels", channels);
         map.put("brands", brands);
         map.put("carts", carts);
+        map.put("brand.limit", SystemConfig.getBrandLimit());
         return Response.success(map);
     }
 
