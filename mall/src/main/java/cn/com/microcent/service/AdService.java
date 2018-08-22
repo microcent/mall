@@ -10,6 +10,6 @@ import java.util.List;
  */
 public interface AdService {
 
-    List<Ad> findTop5();
+    List<Ad> findIndexAd();
 
 }

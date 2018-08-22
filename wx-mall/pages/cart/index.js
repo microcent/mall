@@ -1,3 +1,5 @@
+const util = require('../../utils/util.js');
+const api = require('../../config/api.js');
 //index.js
 //获取应用实例
 const app = getApp()
@@ -5,38 +7,38 @@ const app = getApp()
 Page({
   data: {
     hasLogin: false,
-    cartGoods: [],
+    carts: [],
     cartTotal: {
-      "goodsCount": 0,
-      "goodsAmount": 0.00,
-      "checkedGoodsCount": 0,
-      "checkedGoodsAmount": 0.00
+      "productCount": 0,
+      "productAmount": 0.00,
+      "checkedProductCount": 0,
+      "checkedProductAmount": 0.00
     },
     isEditCart: false,
     checkedAllStatus: true,
     editCartList: []
   },
   onLoad: function() {
-    this.setData({
-      hasLogin: true,
-      cartGoods: [{
-        goodsName: '日式和风懒人沙发',
-        number: 1,
-        price: 599,
-        picUrl: 'http://yanxuan.nosdn.127.net/149dfa87a7324e184c5526ead81de9ad.png',
-        checked: true
-      }, {
-        goodsName: '皇室御用超柔毛巾80s',
-        number: 1,
-        price: 79,
-        picUrl: 'http://yanxuan.nosdn.127.net/71cfd849335c498dee3c54d1eb823c17.png',
-        checked: false
-      }]
+
+  },
+  onPullDownRefresh: function() {
+    wx.showNavigationBarLoading()
+    wx.hideNavigationBarLoading()
+    wx.stopPullDownRefresh()
+  },
+  onShow: function() {
+    var that = this;
+    util.request(api.CartUrl).then(function(res) {
+      that.setData({
+        hasLogin: true,
+        carts: res.data.carts,
+        cartTotal: res.data.cartTotal
+      });
     });
   },
   isCheckedAll: function() {
     //判断购物车商品已全选
-    return this.data.cartGoods.every(function(element, index, array) {
+    return this.data.carts.every(function(element, index, array) {
       if (element.checked == true) {
         return true;
       } else {
@@ -52,21 +54,57 @@ Page({
   },
   checkedItem: function(event) {
     let itemIndex = event.target.dataset.itemIndex;
+    let that = this;
+
+    let productIds = [];
+    productIds.push(that.data.carts[itemIndex].productId);
+    if (!this.data.isEditCart) {
+      util.request(api.CartCheckedUrl, {
+        productIds: productIds,
+        isChecked: that.data.carts[itemIndex].isChecked ? 0 : 1
+      }, 'POST').then(function(res) {
+        if (res.code === 0) {
+          that.setData({
+            carts: res.data.carts,
+            cartTotal: res.data.cartTotal
+          });
+        }
+
+        that.setData({
+          checkedAllStatus: that.isCheckedAll()
+        });
+      });
+    } else {
+      //编辑状态
+      let tmpCartData = this.data.carts.map(function(element, index, array) {
+        if (index == itemIndex) {
+          element.checked = !element.checked;
+        }
+
+        return element;
+      });
+
+      that.setData({
+        carts: tmpCartData,
+        checkedAllStatus: that.isCheckedAll(),
+        'cartTotal.checkedProductCount': that.getCheckedProductCount()
+      });
+    }
   },
-  getCheckedGoodsCount: function() {
-    let checkedGoodsCount = 0;
-    this.data.cartGoods.forEach(function(v) {
+  getCheckedProductCount: function() {
+    let checkedProductCount = 0;
+    this.data.carts.forEach(function(v) {
       if (v.checked === true) {
-        checkedGoodsCount += v.number;
+        checkedProductCount += v.number;
       }
     });
-    return checkedGoodsCount;
+    return checkedProductCount;
   },
   checkedAll: function() {
     let that = this;
 
     if (!this.data.isEditCart) {
-      var productIds = this.data.cartGoods.map(function(v) {
+      var productIds = this.data.carts.map(function(v) {
         return v.productId;
       });
       that.setData({
@@ -75,15 +113,15 @@ Page({
     } else {
       //编辑状态
       let checkedAllStatus = that.isCheckedAll();
-      let tmpCartData = this.data.cartGoods.map(function(v) {
+      let tmpCartData = this.data.carts.map(function(v) {
         v.checked = !checkedAllStatus;
         return v;
       });
 
       that.setData({
-        cartGoods: tmpCartData,
+        carts: tmpCartData,
         checkedAllStatus: that.isCheckedAll(),
-        'cartTotal.checkedGoodsCount': that.getCheckedGoodsCount()
+        'cartTotal.checkedProductCount': that.getCheckedProductCount()
       });
     }
   },
@@ -95,16 +133,16 @@ Page({
       });
     } else {
       //编辑状态
-      let tmpCartList = this.data.cartGoods.map(function(v) {
+      let tmpCartList = this.data.carts.map(function(v) {
         v.checked = false;
         return v;
       });
       this.setData({
-        editCartList: this.data.cartGoods,
-        cartGoods: tmpCartList,
+        editCartList: this.data.carts,
+        carts: tmpCartList,
         isEditCart: !this.data.isEditCart,
         checkedAllStatus: that.isCheckedAll(),
-        'cartTotal.checkedGoodsCount': that.getCheckedGoodsCount()
+        'cartTotal.checkedProductCount': that.getCheckedProductCount()
       });
     }
   }

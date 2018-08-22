@@ -12,61 +12,41 @@ import java.math.BigDecimal;
 public class SystemConfig extends BaseConfig {
     public static final String PREFIX = "mall.system.";
 
-    public static Integer getNewLimit() {
-        return getConfigInt(PREFIX + "limit.new");
+
+    public static Integer getIndexAdLimit() {
+        return getConfigInt(PREFIX + "index.limit.ad");
     }
 
-    public static Integer getHotLimit() {
-        return getConfigInt(PREFIX + "limit.hot");
+    public static Integer getIndexChannelLimit(){
+        return getConfigInt(PREFIX + "index.limit.channel");
     }
 
-    public static Integer getBrandLimit() {
-        return getConfigInt(PREFIX + "limit.brand");
+    public static Integer getIndexNewLimit() {
+        return getConfigInt(PREFIX + "index.limit.new");
     }
 
-    public static Integer getTopicLimit() {
-        return getConfigInt(PREFIX + "limit.topic");
+    public static Integer getIndexHotLimit() {
+        return getConfigInt(PREFIX + "index.limit.hot");
     }
 
-    public static Integer getCatlogListLimit() {
-        return getConfigInt(PREFIX + "limit.catloglist");
+    public static Integer getIndexBrandLimit() {
+        return getConfigInt(PREFIX + "index.limit.brand");
     }
 
-    public static Integer getCatlogMoreLimit() {
-        return getConfigInt(PREFIX + "limit.catloggood");
+    public static Integer getIndexTopicLimit() {
+        return getConfigInt(PREFIX + "index.limit.topic");
     }
 
-    public static String getHotBannerTitle() {
-        return getConfig(PREFIX + "banner.hot.title");
+    public static Integer getIndexCatalogLimit() {
+        return getConfigInt(PREFIX + "index.limit.catalog");
     }
 
-    public static String getNewBannerTitle() {
-        return getConfig(PREFIX + "banner.new.title");
-    }
-
-    public static String getHotImageUrl() {
-        return getConfig(PREFIX + "banner.hot.imageurl");
-    }
-
-    public static String getNewImageUrl() {
-        return getConfig(PREFIX + "banner.new.imageurl");
-    }
-
-    public static BigDecimal getFreight() {
-        return getConfigBigDec(PREFIX + "freight.value");
-    }
-
-    public static BigDecimal getFreightLimit() {
-        return getConfigBigDec(PREFIX + "freight.limit");
+    public static Integer getIndexCatalogMoreLimit() {
+        return getConfigInt(PREFIX + "index.limit.catalog.more");
     }
 
     public static String getMallName() {
         return getConfig(PREFIX + "mallname");
-    }
-
-    public static boolean isAutoCreateShareImage() {
-        int autoCreate = getConfigInt(PREFIX + "shareimage.autocreate");
-        return autoCreate == 0 ? false : true;
     }
 
     @Override

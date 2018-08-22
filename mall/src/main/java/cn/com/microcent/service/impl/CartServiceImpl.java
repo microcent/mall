@@ -22,4 +22,14 @@ public class CartServiceImpl implements CartService {
         return this.cartRepository.findAll();
     }
 
+    @Override
+    public List<Cart> findByUserId(long userId) {
+        return this.cartRepository.findByUserId(userId);
+    }
+
+    @Override
+    public void updateCheck(List<Long> productIds, boolean isChecked) {
+        this.cartRepository.updateChecked(isChecked,productIds);
+    }
+
 }

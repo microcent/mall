@@ -2,6 +2,7 @@ package cn.com.microcent.service;
 
 
 import cn.com.microcent.domain.core.Order;
+import cn.com.microcent.domain.core.OrderProduct;
 
 import java.util.List;
 
@@ -11,5 +12,9 @@ import java.util.List;
 public interface OrderService {
 
     List<Order> findAll();
+
+    List<Order> findByUserIdAndStatus(long userId, int status);
+
+    List<OrderProduct> findByOrderId(long orderId);
 
 }

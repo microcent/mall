@@ -11,4 +11,8 @@ public interface CartService {
 
     List<Cart> findAll();
 
+    List<Cart> findByUserId(long userId);
+
+    void updateCheck(List<Long> productIds,boolean isChecked);
+
 }

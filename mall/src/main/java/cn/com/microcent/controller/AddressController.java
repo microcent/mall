@@ -30,8 +30,7 @@ public class AddressController {
     @ApiOperation(value = "获取收货地址列表", notes = "")
     @RequestMapping(value = "", method = RequestMethod.GET)
     public Response list() {
-        List<Address> list = this.addressService.findAll();
-        LOGGER.info("list size:{}", list.size());
+        List<Address> list = this.addressService.findByUserId(1);
         return Response.success(list);
     }
 

@@ -51,14 +51,26 @@ public class Product implements Serializable {
     @Column(name = "stock")
     private int stock;
 
-    @Column(name = "price")
-    private BigDecimal price;
+    @Column(name = "counter_price")
+    private BigDecimal counterPrice;
+
+    @Column(name = "retail_price")
+    private BigDecimal retailPrice;
 
     @Column(name = "unit")
     private String unit;
 
     @Column(name = "detail")
     private String detail;
+
+    @Column(name = "is_on_sale")
+    private boolean isOnSale;
+
+    @Column(name = "is_new")
+    private boolean isNew;
+
+    @Column(name = "is_hot")
+    private boolean isHot;
 
     @Column(name = "create_time")
     private Date createTime;

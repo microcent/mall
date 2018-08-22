@@ -22,4 +22,8 @@ public class AddressServiceImpl implements AddressService {
         return this.addressRepository.findAll();
     }
 
+    @Override
+    public List<Address> findByUserId(long userId) {
+        return this.addressRepository.findByUserId(userId);
+    }
 }

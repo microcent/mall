@@ -22,7 +22,11 @@ Page({
         that.setData({
           banner: res.data.banners,
           channel: res.data.channels,
-          brands: res.data.brands
+          brands: res.data.brands,
+          newGoods: res.data.news,
+          hotGoods: res.data.hots,
+          topics:res.data.topics,
+          floorGoods:res.data.floors
         });
       }
     });
@@ -45,69 +49,6 @@ Page({
           counterPrice: 299,
           picUrl: 'http://yanxuan.nosdn.127.net/07376e78bf4fb8a5aa8e6a0b1437c3ad.png'
         }
-      }],
-      newGoods: [{
-        id: 1,
-        name: '轻奢纯棉刺绣水洗四件套',
-        retailPrice: 899,
-        picUrl: 'http://yanxuan.nosdn.127.net/8ab2d3287af0cefa2cc539e40600621d.png'
-      }, {
-        id: 2,
-        name: '秋冬保暖加厚澳洲羊毛被',
-        retailPrice: 459,
-        picUrl: 'http://yanxuan.nosdn.127.net/66425d1ed50b3968fed27c822fdd32e0.png'
-      }],
-      hotGoods: [{
-        id: 1,
-        name: '双宫茧桑蚕丝被 空调被',
-        brief: '一级桑蚕丝，吸湿透气柔软',
-        retailPrice: 699,
-        picUrl: 'http://yanxuan.nosdn.127.net/583812520c68ca7995b6fac4c67ae2c7.png'
-      }, {
-        id: 2,
-        name: '双宫茧桑蚕丝被 子母被',
-        brief: '双层子母被，四季皆可使用',
-        retailPrice: 1399,
-        picUrl: 'http://yanxuan.nosdn.127.net/2b537159f0f789034bf8c4b339c43750.png'
-      }, {
-        id: 3,
-        name: '秋冬保暖加厚细羊毛被',
-        brief: '细腻绵羊毛，保暖性增加一倍',
-        retailPrice: 659,
-        picUrl: 'http://yanxuan.nosdn.127.net/8fe022126a2789d970f82853be13a5e6.png'
-      }],
-      topics: [{
-        id: 1,
-        title: '设计师们推荐的应季好物',
-        subtitle: '原创设计春款系列上新',
-        price: 29.9,
-        picUrl: 'https://yanxuan.nosdn.127.net/14918201901050274.jpg'
-      }, {
-        id: 2,
-        title: '一条丝巾就能提升时髦度',
-        subtitle: '不知道大家对去年G20时，严选与国礼制造商一起推出的《凤凰于飞》等几款丝巾是否还...',
-        price: 0,
-        picUrl: 'https://yanxuan.nosdn.127.net/14919007135160213.jpg'
-      }],
-      floorGoods: [{
-        id: 1,
-        name: '布艺软装',
-        goodsList: [{
-          id: 1,
-          name: '可水洗抗菌防螨丝羽绒枕',
-          retailPrice: 99,
-          picUrl: 'http://yanxuan.nosdn.127.net/da56fda947d0f430d5f4cf4aba14e679.png'
-        }, {
-          id: 2,
-          name: '白鹅绒秋冬加厚羽绒被',
-          retailPrice: 1999,
-          picUrl: 'http://yanxuan.nosdn.127.net/9791006f25e26b2d7c81f41f87ce8619.png'
-        }, {
-          id: 3,
-          name: '可水洗舒柔丝羽绒枕',
-          retailPrice: 59,
-          picUrl: 'http://yanxuan.nosdn.127.net/a196b367f23ccfd8205b6da647c62b84.png'
-        }]
       }]
     });
   }
