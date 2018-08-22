@@ -22,4 +22,8 @@ public class CollectServiceImpl implements CollectService {
         return this.collectRepository.findAll();
     }
 
+    @Override
+    public List<Collect> findByUserId(long userId) {
+        return this.collectRepository.findByUserId(userId);
+    }
 }

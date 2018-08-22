@@ -11,4 +11,16 @@ public interface ProductService {
 
     List<Product> findAll();
 
+    List<Product> findIndexNew();
+
+    List<Product> findIndexHot();
+
+    List<Product> findByCategory(List<Long> idList);
+
+    List<Product> findByCategoryId(long categoryId);
+
+    long count();
+
+    Product findById(long id);
+
 }

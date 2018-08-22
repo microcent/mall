@@ -1,5 +1,6 @@
 package cn.com.microcent.service.impl;
 
+import cn.com.microcent.core.SystemConfig;
 import cn.com.microcent.domain.core.Brand;
 import cn.com.microcent.domain.core.Category;
 import cn.com.microcent.repository.core.BrandRepository;
@@ -28,9 +29,9 @@ public class BrandServiceImpl implements BrandService {
     }
 
     @Override
-    public List<Brand> findTop4() {
+    public List<Brand> findIndexBrand() {
         Sort sort = new Sort(Sort.Direction.ASC, "sortNo");
-        Pageable pageable = PageRequest.of(0, 4, sort);
+        Pageable pageable = PageRequest.of(0, SystemConfig.getIndexBrandLimit(), sort);
         Page<Brand> page = this.brandRepository.findAll(pageable);
         return page.getContent();
     }

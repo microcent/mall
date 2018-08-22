@@ -11,4 +11,6 @@ public interface AddressService {
 
     List<Address> findAll();
 
+    List<Address> findByUserId(long userId);
+
 }

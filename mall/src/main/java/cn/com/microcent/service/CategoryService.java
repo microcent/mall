@@ -12,6 +12,14 @@ public interface CategoryService {
 
     List<Category> findAll();
 
-    List<Category> findTop5();
+    List<Category> findIndexChannel();
+
+    List<Category> findIndexFloor();
+
+    List<Category> findByParentId(long parentId);
+
+    List<Category> findL1();
+
+    Category findById(long id);
 
 }

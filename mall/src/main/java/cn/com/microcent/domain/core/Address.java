@@ -38,8 +38,8 @@ public class Address implements Serializable {
     @Column(name = "area_id")
     private long areaId;
 
-    @Column(name = "adderss")
-    private String adderss;
+    @Column(name = "address")
+    private String address;
 
     @Column(name = "mobile")
     private String mobile;

@@ -13,37 +13,40 @@ import java.util.Date;
  * Created by Administrator on 2018/8/17.
  */
 @Entity
-@Table(name = "t_order_product")
+@Table(name = "t_topic")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class OrderProduct implements Serializable {
+public class Topic implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private long id;
 
-    @Column(name = "order_id")
-    private long orderId;
+    @Column(name = "title")
+    private String title;
 
-    @Column(name = "product_id")
-    private long productId;
+    @Column(name = "subtitle")
+    private String subtitle;
 
-    @Column(name = "product_name")
-    private String productName;
-
-    @Column(name = "product_no")
-    private String productNo;
+    @Column(name = "content")
+    private String content;
 
     @Column(name = "price")
     private BigDecimal price;
 
-    @Column(name = "quantity")
-    private int quantity;
+    @Column(name = "read_count")
+    private int readCount;
 
     @Column(name = "image_url")
     private String imageUrl;
+
+    @Column(name = "sort_no")
+    private int sortNo;
+
+    @Column(name = "products")
+    private String products;
 
     @Column(name = "create_time")
     private Date createTime;

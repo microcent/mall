@@ -11,4 +11,6 @@ public interface CollectService {
 
     List<Collect> findAll();
 
+    List<Collect> findByUserId(long userId);
+
 }

@@ -45,8 +45,8 @@ public class Cart implements Serializable {
     @Column(name = "specifications")
     private String specifications;
 
-    @Column(name = "checked")
-    private boolean checked;
+    @Column(name = "is_checked")
+    private boolean isChecked;
 
     @Column(name = "image_url")
     private String imageUrl;

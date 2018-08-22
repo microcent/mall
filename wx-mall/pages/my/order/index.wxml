@@ -7,13 +7,13 @@
       <view class="txt">待付款</view>
     </view>
     <view class="item {{ showType == 2 ? 'active' : ''}}" bindtap="switchTab" data-index='2'>
-      <view class="txt">待发货</view>
+      <view class="txt">已支付</view>
     </view>
     <view class="item {{ showType == 3 ? 'active' : ''}}" bindtap="switchTab" data-index='3'>
       <view class="txt">待收货</view>
     </view>
     <view class="item {{ showType == 4 ? 'active' : ''}}" bindtap="switchTab" data-index='4'>
-      <view class="txt">待评价</view>
+      <view class="txt">订单完成</view>
     </view>
   </view>
   <view class="no-order" wx:if="{{orderList.length <= 0}}">
@@ -26,21 +26,21 @@
   <view class="orders">
     <navigator url="../orderDetail/orderDetail?id={{item.id}}" class="order" open-type="redirect" wx:for="{{orderList}}" wx:key="id">
       <view class="h">
-        <view class="l">订单编号：{{item.orderSn}}</view>
-        <view class="r">{{item.orderStatusText}}</view>
+        <view class="l">订单编号：{{item.orderNo}}</view>
+        <view class="r">{{item.statusText}}</view>
       </view>
-      <view class="goods" wx:for="{{item.goodsList}}" wx:key="id" wx:for-item="gitem">
+      <view class="goods" wx:for="{{item.products}}" wx:key="id" wx:for-item="gitem">
         <view class="img">
-          <image src="{{gitem.picUrl}}"></image>
+          <image src="{{gitem.imageUrl}}"></image>
         </view>
         <view class="info">
-          <text class="name">{{gitem.goodsName}}</text>
-          <text class="number">共{{gitem.number}}件商品</text>
+          <text class="name">{{gitem.productName}}</text>
+          <text class="number">共{{gitem.quantity}}件商品</text>
         </view>
         <view class="status"></view>
       </view>
       <view class="b">
-        <view class="l">实付：￥{{item.actualPrice}}</view>
+        <view class="l">实付：￥{{item.amount}}</view>
       </view>
     </navigator>
   </view>

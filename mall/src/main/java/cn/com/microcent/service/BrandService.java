@@ -11,6 +11,6 @@ public interface BrandService {
 
     List<Brand> findAll();
 
-    List<Brand> findTop4();
+    List<Brand> findIndexBrand();
 
 }
