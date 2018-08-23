@@ -22,4 +22,8 @@ public class BrowseLogServiceImpl implements BrowseLogService {
         return this.browseLogRepository.findAll();
     }
 
+    @Override
+    public List<BrowseLog> findByUserId(long userId) {
+        return this.browseLogRepository.findByUserId(userId);
+    }
 }

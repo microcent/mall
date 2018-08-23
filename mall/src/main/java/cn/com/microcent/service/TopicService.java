@@ -11,4 +11,6 @@ public interface TopicService {
 
     List<Topic> findIndexTopic();
 
+    Topic findById(long id);
+
 }

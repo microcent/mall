@@ -21,6 +21,10 @@ public class SystemConfig extends BaseConfig {
         return getConfigInt(PREFIX + "index.limit.channel");
     }
 
+    public static Integer getIndexGrouponLimit(){
+        return getConfigInt(PREFIX + "index.limit.groupon");
+    }
+
     public static Integer getIndexNewLimit() {
         return getConfigInt(PREFIX + "index.limit.new");
     }

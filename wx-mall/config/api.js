@@ -1,4 +1,4 @@
-var apiRoot = 'http://localhost:8000';
+var apiRoot = 'https://localhost:8443';
 
 module.exports = {
   IndexUrl: apiRoot + '/index',
@@ -11,5 +11,8 @@ module.exports = {
   CartCheckedUrl: apiRoot + '/cart/checked',
   AddressUrl: apiRoot + '/address',
   CollectUrl: apiRoot + '/collect',
-  OrderUrl: apiRoot + '/order'
+  OrderUrl: apiRoot + '/order',
+  BrowseLogUrl: apiRoot + '/log/browse',
+  RegionUrl: apiRoot + '/region',
+  TopicDetailUrl: apiRoot + '/topic/detail'
 };

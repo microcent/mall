@@ -23,14 +23,18 @@ import java.util.List;
 public class TopicServiceImpl implements TopicService {
 
     @Autowired
-    private TopicRepository adRepository;
+    private TopicRepository topicRepository;
 
     @Override
     public List<Topic> findIndexTopic() {
         Sort sort = new Sort(Sort.Direction.ASC, "createTime");
         Pageable pageable = PageRequest.of(0, SystemConfig.getIndexTopicLimit(), sort);
-        Page<Topic> page = this.adRepository.findAll(pageable);
+        Page<Topic> page = this.topicRepository.findAll(pageable);
         return page.getContent();
     }
 
+    @Override
+    public Topic findById(long id) {
+        return this.topicRepository.findById(id).get();
+    }
 }

@@ -22,4 +22,8 @@ public class RegionServiceImpl implements RegionService {
         return this.regionRepository.findAll();
     }
 
+    @Override
+    public List<Region> findByParentId(long parentId) {
+        return this.regionRepository.findByParentId(parentId);
+    }
 }

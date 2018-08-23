@@ -26,20 +26,20 @@
     </view>
     <view class="b">
       <view class="item" wx:for="{{groupons}}" wx:for-index="index" wx:for-item="item" wx:key="id">
-        <navigator url="/pages/goods/index?id={{item.goods.id}}">
-          <image class="img" src="{{item.goods.picUrl}}" background-size="cover"></image>
+        <navigator url="/pages/goods/index?id={{item.product.id}}">
+          <image class="img" src="{{item.product.imageUrl}}" background-size="cover"></image>
           <view class="right">
             <view class="text">
               <view class="header">
-                <text class="name">{{item.goods.name}}</text>
+                <text class="name">{{item.product.name}}</text>
                 <view class="capsule-tag">
-                  <zan-capsule color="#a78845" leftText="团购" rightText="{{item.groupon_member}}" />
+                  <zan-capsule color="#a78845" leftText="团购" rightText="{{item.grouponMember}}" />
                 </view>
               </view>
-              <text class="desc">{{item.goods.brief}}</text>
+              <text class="desc">{{item.product.brief}}</text>
               <view class="price">
-                <view class="counterPrice">原价：￥{{item.goods.counterPrice}}</view>
-                <view class="retailPrice">现价：￥{{item.groupon_price}}</view>
+                <view class="counterPrice">原价：￥{{item.product.counterPrice}}</view>
+                <view class="retailPrice">现价：￥{{item.grouponPrice}}</view>
               </view>
             </view>
           </view>
@@ -123,7 +123,7 @@
     <view class="b">
       <scroll-view scroll-x class="list">
         <view class="item" wx:for="{{topics}}" wx:for-index="index" wx:for-item="item" wx:key="id">
-          <navigator url="../topicDetail/topicDetail?id={{item.id}}">
+          <navigator url="../topic/detail/index?id={{item.id}}">
             <image class="img" src="{{item.imageUrl}}" background-size="cover"></image>
             <view class="np">
               <text class="name">{{item.title}}</text>
