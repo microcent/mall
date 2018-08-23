@@ -14,5 +14,7 @@ module.exports = {
   OrderUrl: apiRoot + '/order',
   BrowseLogUrl: apiRoot + '/log/browse',
   RegionUrl: apiRoot + '/region',
-  TopicDetailUrl: apiRoot + '/topic/detail'
+  TopicDetailUrl: apiRoot + '/topic/detail',
+  TopicRelatedUrl: apiRoot + '/topic/related',
+  TopicCommentUrl: apiRoot + '/topic/comment'
 };

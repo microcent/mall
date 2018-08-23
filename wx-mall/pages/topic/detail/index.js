@@ -27,28 +27,20 @@ Page({
       WxParse.wxParse('topicDetail', 'html', res.data.content, that);
     });
 
-    // util.request(api.TopicRelated, { id: that.data.id }).then(function (res) {
-    //     that.setData({
-    //       topicList: res.data
-    //     });
-    // });
+    util.request(api.TopicRelatedUrl + '/' + that.data.id).then(function(res) {
+      that.setData({
+        topicList: res.data
+      });
+    });
+    that.getCommentList();
   },
   getCommentList() {
     let that = this;
-    util.request(api.CommentList, {
-      valueId: that.data.id,
-      type: 1,
-      showType: 0,
-      page: 1,
-      size: 5
-    }).then(function(res) {
-      if (res.errno === 0) {
-
+    util.request(api.TopicCommentUrl+'/'+that.data.id).then(function(res) {
         that.setData({
-          commentList: res.data.data,
-          commentCount: res.data.count
+          commentList: res.data,
+          commentCount: res.data.length
         });
-      }
     });
   },
   postComment() {
@@ -57,9 +49,9 @@ Page({
     //     url: "/pages/auth/login/login"
     //   });
     // } else {
-      wx.navigateTo({
-        url: '/pages/topic/comment/index?valueId=' + this.data.id + '&type=1',
-      })
+    wx.navigateTo({
+      url: '/pages/topic/comment/index?valueId=' + this.data.id + '&type=1',
+    })
     // }
   }
 })

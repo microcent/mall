@@ -44,8 +44,8 @@ public class User implements Serializable {
     @Column(name = "mobile")
     private String mobile;
 
-    @Column(name = "avatar")
-    private String avatar;
+    @Column(name = "avatar_url")
+    private String avatarUrl;
 
     @Column(name = "status")
     private int status;

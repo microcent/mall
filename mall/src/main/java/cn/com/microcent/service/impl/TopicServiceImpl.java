@@ -37,4 +37,12 @@ public class TopicServiceImpl implements TopicService {
     public Topic findById(long id) {
         return this.topicRepository.findById(id).get();
     }
+
+    @Override
+    public List<Topic> findByIdNot(long id) {
+        Sort sort = new Sort(Sort.Direction.DESC, "createTime");
+        Pageable pageable = PageRequest.of(0, 5, sort);
+        Page<Topic> page = this.topicRepository.findByIdNot(id, pageable);
+        return page.getContent();
+    }
 }

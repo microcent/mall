@@ -13,6 +13,7 @@
     "pages/category/index",
     "pages/goods/index",
     "pages/about/index",
+    "pages/topic/index",
     "pages/topic/detail/index",
     "pages/topic/comment/index",
     "pages/auth/login/index",

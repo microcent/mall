@@ -13,4 +13,6 @@ public interface TopicService {
 
     Topic findById(long id);
 
+    List<Topic> findByIdNot(long id);
+
 }

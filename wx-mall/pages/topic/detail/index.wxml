@@ -15,18 +15,18 @@
         <view class="item" wx:for="{{commentList}}" wx:key="id">
           <view class="info">
             <view class="user">
-              <image class="avatar" src="{{item.userInfo.avatarUrl}}"></image>
-              <text class="nickname">{{item.userInfo.nickName}}</text>
+              <image class="avatar" src="{{item.user.avatarUrl}}"></image>
+              <text class="nickname">{{item.user.nickName}}</text>
             </view>
-            <view class="time">{{item.addTime}}</view>
+            <view class="time">{{item.comment.createTime}}</view>
           </view>
           <view class="comment">
-            {{item.content}}
+            {{item.comment.content}}
           </view>
         </view>
       </view>
       <view class="load" wx:if="{{commentCount > 5}}">
-        <navigator url="/pages/topicComment/topicComment?valueId={{topic.id}}&type=1">查看更多</navigator>
+        <navigator url="/pages/topic/index?id={{topic.id}}">查看更多</navigator>
       </view>
     </view>
     <view class="no-comments" wx:if="{{commentList.length <= 0}}">
@@ -41,8 +41,8 @@
       <text class="txt">专题推荐</text>
     </view>
     <view class="b">
-      <navigator class="item" wx:for="{{topicList}}" wx:key="id" url="../topic/detail/index?id={{item.id}}">
-        <image class="img" src="{{item.picUrl}}"></image>
+      <navigator class="item" wx:for="{{topicList}}" wx:key="id" url="../detail/index?id={{item.id}}">
+        <image class="img" src="{{item.imageUrl}}"></image>
         <text class="title">{{item.title}}</text>
       </navigator>
     </view>
