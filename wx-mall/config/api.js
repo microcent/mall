@@ -16,5 +16,8 @@ module.exports = {
   RegionUrl: apiRoot + '/region',
   TopicDetailUrl: apiRoot + '/topic/detail',
   TopicRelatedUrl: apiRoot + '/topic/related',
-  TopicCommentUrl: apiRoot + '/topic/comment'
+  TopicCommentUrl: apiRoot + '/topic/comment',
+  LoginUrl: apiRoot + '/login',
+  RegisterUrl: apiRoot + '/register',
+  SendSmsUrl: apiRoot + '/user/sms/send'
 };

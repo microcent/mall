@@ -2,10 +2,9 @@
   <view class="profile-info" bindtap="goLogin">
     <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
     <view class="info">
-      <text class="name">{{userInfo.nickName}}</text>
+      <text class="name">{{userInfo.nickname}}</text>
     </view>
   </view>
-
   <view class="user-menu">
     <view class="item">
       <view class="a" bindtap="goOrder">
