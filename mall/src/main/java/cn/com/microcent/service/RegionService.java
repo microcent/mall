@@ -11,4 +11,6 @@ public interface RegionService {
 
     List<Region> findAll();
 
+    List<Region> findByParentId(long parentId);
+
 }

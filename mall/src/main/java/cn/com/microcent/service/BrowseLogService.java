@@ -11,4 +11,6 @@ public interface BrowseLogService {
 
     List<BrowseLog> findAll();
 
+    List<BrowseLog> findByUserId(long userId);
+
 }

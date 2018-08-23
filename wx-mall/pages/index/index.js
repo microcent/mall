@@ -22,6 +22,7 @@ Page({
         that.setData({
           banner: res.data.banners,
           channel: res.data.channels,
+          groupons:res.data.groupons,
           brands: res.data.brands,
           newGoods: res.data.news,
           hotGoods: res.data.hots,
@@ -29,27 +30,6 @@ Page({
           floorGoods:res.data.floors
         });
       }
-    });
-    this.setData({
-      groupons: [{
-        groupon_price: 59,
-        groupon_member: 99,
-        goods: {
-          id: 1,
-          name: '100年传世珐琅锅 全家系列',
-          counterPrice: 398,
-          picUrl: 'http://yanxuan.nosdn.127.net/c39d54c06a71b4b61b6092a0d31f2335.png'
-        }
-      }, {
-        groupon_price: 99,
-        groupon_member: 99,
-        goods: {
-          id: 1,
-          name: '色织华夫格夏凉被',
-          counterPrice: 299,
-          picUrl: 'http://yanxuan.nosdn.127.net/07376e78bf4fb8a5aa8e6a0b1437c3ad.png'
-        }
-      }]
     });
   }
 })

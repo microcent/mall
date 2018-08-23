@@ -11,4 +11,6 @@ public interface CommentService {
 
     List<Comment> findAll();
 
+    List<Comment> findTopicCommect(long topicId);
+
 }

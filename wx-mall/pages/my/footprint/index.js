@@ -1,3 +1,5 @@
+const util = require('../../../utils/util.js')
+const api = require('../../../config/api.js')
 //index.js
 //获取应用实例
 const app = getApp()
@@ -7,31 +9,24 @@ Page({
     footprintList: []
   },
   onLoad: function() {
-    this.setData({
-      footprintList: [
-        [{
-          id: 1,
-          name: '升级款护颈加翼记忆枕',
-          brief: '仰睡优质装备',
-          retailPrice: 109,
-          picUrl: 'http://yanxuan.nosdn.127.net/7644803ab19b3e398456aa5a54229363.png',
-          addTime: '2018-08-16 00:00'
-        }, {
-          id: 2,
-          name: '升级款护颈双人记忆枕',
-          brief: '共享亲密2人时光',
-          retailPrice: 199,
-          picUrl: 'http://yanxuan.nosdn.127.net/0118039f7cda342651595d994ed09567.png',
-          addTime: '2018-08-16 00:00'
-        }, {
-          id: 3,
-          name: '植物填充护颈夜交藤枕',
-          brief: '健康保护枕',
-          retailPrice: 99,
-          picUrl: 'http://yanxuan.nosdn.127.net/60c3707837c97a21715ecc3986a744ce.png',
-          addTime: '2018-08-16 00:00'
-        }]
-      ]
+    var that = this;
+    util.request(api.BrowseLogUrl).then(function (res) {
+      let f1 = that.data.footprintList;
+      let f2 = res.data;
+      for (let i = 0; i < f2.length; i++) {
+        let last = f1.length - 1;
+        if (last >= 0 && f1[last][0].createTime === f2[i].createTime) {
+          f1[last].push(f2[i]);
+        }
+        else {
+          let tmp = [];
+          tmp.push(f2[i])
+          f1.push(tmp);
+        }
+      }
+      that.setData({
+        footprintList: f1
+      });
     });
   }
 })

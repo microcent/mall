@@ -22,4 +22,8 @@ public class CommentServiceImpl implements CommentService {
         return this.commentRepository.findAll();
     }
 
+    @Override
+    public List<Comment> findTopicCommect(long topicId) {
+        return this.commentRepository.findByTypeAndValueId(1, topicId);
+    }
 }

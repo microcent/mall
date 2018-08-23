@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50628
 File Encoding         : 65001
 
-Date: 2018-08-21 15:46:21
+Date: 2018-08-23 18:06:06
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -25,11 +25,13 @@ CREATE TABLE `t_browse_log` (
   `product_id` bigint(20) NOT NULL,
   `create_time` datetime NOT NULL ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of t_browse_log
 -- ----------------------------
+INSERT INTO `t_browse_log` VALUES ('1', '1', '1006002', '2018-08-23 11:26:36');
+INSERT INTO `t_browse_log` VALUES ('2', '1', '1006007', '2018-08-23 11:27:05');
 
 -- ----------------------------
 -- Table structure for t_log

@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import springfox.documentation.schema.Collections;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -39,6 +40,9 @@ public class IndexController {
     private CategoryService categoryService;
 
     @Autowired
+    private GrouponService grouponService;
+
+    @Autowired
     private BrandService brandService;
 
     @Autowired
@@ -53,12 +57,24 @@ public class IndexController {
         List<Ad> banners = this.adService.findIndexAd();
         List<Category> channels = this.categoryService.findIndexChannel();
         List<Brand> brands = this.brandService.findIndexBrand();
+        List<Groupon> grouponList = this.grouponService.findIndexGroupon();
+        List<Map<String, Object>> groupons = new ArrayList<>();
+        for (Groupon groupon : grouponList) {
+            Map<String, Object> map = new HashMap<>();
+            Product product = this.productService.findById(groupon.getProductId());
+            map.put("id", groupon.getId());
+            map.put("grouponMember", groupon.getDiscountMember());
+            map.put("grouponPrice", product.getRetailPrice().subtract(groupon.getDiscount()));
+            map.put("product", product);
+            groupons.add(map);
+        }
         List<Product> news = this.productService.findIndexNew();
         List<Product> hots = this.productService.findIndexHot();
         List<Topic> topics = this.topicService.findIndexTopic();
         Map<String, Object> map = new HashMap<>();
         map.put("banners", banners);
         map.put("channels", channels);
+        map.put("groupons", groupons);
         map.put("brands", brands);
         map.put("news", news);
         map.put("hots", hots);
