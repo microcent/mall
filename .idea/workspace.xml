@@ -1,147 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="538be70c-8ad3-4733-8169-e51cfb711ed4" name="Default" comment="change mall api">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/application-core.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/application-db.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/application.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/Application.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/config/CoreDataSourceConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/config/DruidConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/config/LogDataSourceConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/config/ScheduleConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/config/Swagger2Config.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/controller/AddressController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/controller/AdminController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/controller/BrandController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/controller/CartController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/controller/CatalogController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/controller/CategoryController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/controller/CollectController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/controller/CommentController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/controller/IndexController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/controller/IssueController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/controller/LogController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/controller/LoginController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/controller/OrderController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/controller/ProductController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/controller/RegionController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/controller/SystemController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/controller/TopicController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/controller/UserController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/core/BaseConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/core/ConfigService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/core/SystemConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/domain/core/Ad.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/domain/core/Address.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/domain/core/Admin.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/domain/core/Brand.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/domain/core/Cart.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/domain/core/Category.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/domain/core/Collect.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/domain/core/Comment.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/domain/core/Groupon.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/domain/core/Issue.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/domain/core/Order.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/domain/core/OrderProduct.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/domain/core/Product.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/domain/core/ProductAttribute.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/domain/core/ProductSpecification.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/domain/core/Region.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/domain/core/System.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/domain/core/Topic.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/domain/core/User.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/domain/log/BroweLog.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/domain/log/BrowseLog.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/domain/log/Log.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/domain/log/OrderLog.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/entity/CheckedModel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/entity/Response.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/entity/ResponseCode.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/entity/ViewUser.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/enums/OrderStatus.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/repository/core/AdRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/repository/core/AddressRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/repository/core/AdminRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/repository/core/BrandRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/repository/core/CartRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/repository/core/CategoryRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/repository/core/CollectRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/repository/core/CommentRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/repository/core/GrouponRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/repository/core/IssueRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/repository/core/OrderProductRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/repository/core/OrderRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/repository/core/ProductAttributeRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/repository/core/ProductRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/repository/core/ProductSpecificationRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/repository/core/RegionRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/repository/core/SystemRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/repository/core/TopicRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/repository/core/UserRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/repository/log/BrowseLogRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/repository/log/LogRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/repository/log/OrderLogRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/service/AdService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/service/AddressService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/service/AdminService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/service/BrandService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/service/BrowseLogService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/service/CartService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/service/CategoryService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/service/CollectService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/service/CommentService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/service/GrouponService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/service/IssueService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/service/LogService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/service/OrderLogService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/service/OrderService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/service/ProductService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/service/RegionService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/service/SystemService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/service/TopicService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/service/UserService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/service/impl/AdServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/service/impl/AddressServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/service/impl/AdminServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/service/impl/BrandServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/service/impl/BrowseLogServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/service/impl/CartServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/service/impl/CategoryServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/service/impl/CollectServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/service/impl/CommentServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/service/impl/GrouponServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/service/impl/IssueServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/service/impl/LogServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/service/impl/OrderLogServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/service/impl/OrderServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/service/impl/ProductServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/service/impl/RegionServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/service/impl/SystemServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/service/impl/TopicServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/service/impl/UserServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/cn/com/microcent/task/Jobs.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/keystore.p12" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/logback-spring.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/static/css/default.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/classes/templates/list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/mall-1.0.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/mall-1.0.0.jar.original" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/maven-archiver/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/surefire-reports/TEST-cn.com.microcent.AppTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/surefire-reports/cn.com.microcent.AppTest.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/target/test-classes/cn/com/microcent/AppTest.class" afterPath="" />
+    <list default="true" id="538be70c-8ad3-4733-8169-e51cfb711ed4" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mall/src/main/java/cn/com/microcent/domain/log/BroweLog.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mall/.idea/workspace.xml" afterPath="$PROJECT_DIR$/mall/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wx-mall/app.js" afterPath="$PROJECT_DIR$/wx-mall/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wx-mall/app.json" afterPath="$PROJECT_DIR$/wx-mall/app.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wx-mall/config/api.js" afterPath="$PROJECT_DIR$/wx-mall/config/api.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wx-mall/pages/my/index.js" afterPath="$PROJECT_DIR$/wx-mall/pages/my/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wx-mall/pages/my/index.wxml" afterPath="$PROJECT_DIR$/wx-mall/pages/my/index.wxml" />
     </list>
     <ignored path="mall.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -284,6 +147,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -304,7 +168,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -817,7 +680,8 @@
       <workItem from="1534860202317" duration="2066000" />
       <workItem from="1534946698918" duration="434000" />
       <workItem from="1535033647617" duration="130000" />
-      <workItem from="1535065911852" duration="720000" />
+      <workItem from="1535065911852" duration="775000" />
+      <workItem from="1535277755757" duration="692000" />
     </task>
     <task id="LOCAL-00001" summary="change mall api">
       <created>1534863659246</created>
@@ -833,11 +697,18 @@
       <option name="project" value="LOCAL" />
       <updated>1534947033230</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="change mall api">
+      <created>1535068179500</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1535068179500</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3350000" />
+    <option name="totallyTimeSpent" value="4097000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="0" />
@@ -849,9 +720,9 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.50208336" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295325" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -862,8 +733,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
