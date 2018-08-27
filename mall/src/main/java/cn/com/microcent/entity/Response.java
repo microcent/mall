@@ -27,6 +27,11 @@ public class Response<T> implements Serializable {
         this.data = data;
     }
 
+    public Response(ResponseCode code, String msg) {
+        this.code = code;
+        this.msg = msg;
+    }
+
     public final static <T> Response<T> success() {
         return new Response(ResponseCode.SUCCESS);
     }

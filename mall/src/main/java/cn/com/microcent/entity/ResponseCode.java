@@ -24,6 +24,8 @@ public enum ResponseCode {
     NOT_FOUND(404, "不存在"),
 
     USER_NOT_FOUND(404001, "用户不存在"),
+    USER_ILLEGAL_USERNAME(404002,"用户名不正确"),
+    USER_ILLEGAL_PASSWORD(404003,"用户密码不正确"),
 
     INTERNAL_SERVER_ERROR(500, "服务器内部错误");
 

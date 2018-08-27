@@ -1,8 +1,11 @@
 package cn.com.microcent.service.impl;
 
 import cn.com.microcent.domain.core.User;
+import cn.com.microcent.entity.ResponseCode;
+import cn.com.microcent.exception.MallException;
 import cn.com.microcent.repository.core.UserRepository;
 import cn.com.microcent.service.UserService;
+import org.apache.commons.codec.digest.DigestUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -34,5 +37,16 @@ public class UserServiceImpl implements UserService {
     @Override
     public User findById(long id) {
         return this.userRepository.findById(id).get();
+    }
+
+    @Override
+    public User login(String username, String password) {
+        User user = this.userRepository.findByUsername(username);
+        if (user == null)
+            throw new MallException(ResponseCode.USER_NOT_FOUND);
+        String hexPassword = DigestUtils.sha256Hex(password);
+        if (!user.getPassword().equals(hexPassword))
+            throw new MallException(ResponseCode.USER_ILLEGAL_PASSWORD);
+        return user;
     }
 }
