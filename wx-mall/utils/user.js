@@ -1,7 +1,0 @@
-function checkSession() {
-
-}
-
-function checkLogin() {
-
-}
